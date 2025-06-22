@@ -74,7 +74,6 @@
 
 
 ! Блокировка рекламы Яндекса — агрессивная версия
-! Обновлено: 2025-06-22
 !Yandex
 ||storage.mds.yandex.net^
 ||api.browser.yandex.ru^$important
