@@ -28,7 +28,6 @@
 ||www.sohu.com^
 ||www.163.com^
 ||storage.mds.yandex.net^
-||yandex.ru^
 ||glitchtip.jgeek00.com^
 ||conn-service-us-04.allawnos.com^a
 ||spot-pa.googleapis.com^
@@ -62,6 +61,34 @@
 ||ocsp.entrust.net^
 ||dzen.ru^$imporant
 ||firebase-settings.crashlytics.com^$important
+||sz.kz^
+
+!Google
+||dnsotls-ds.metric.gstatic.com^
+||encrypted-tbn0.gstatic.com^
+||encrypted-tbn2.gstatic.com^
+||mtalk.google.com^
+||metric.gstatic.com^
+||chart.apis.google.com^
+||cse.google.com^
+||encrypted-tbn1.gstatic.com^
+||www.gstatic.com^
+||-----------------------------------------fonts.gstatic.com ^
+||ogs.google.com^
+||ssl.gstatic.com^
+||aa.google.com^
+||encrypted-tbn3.gstatic.com^
+||pki-goog.l.google.com^
+||signaler-pa.clients6.google.com^
+||addons-pa.clients6.google.com^
+||apis.google.com^
+||0.client-channel.google.com^
+||.clients2.google.com ^
+
+
+! Блокировка рекламы Яндекса — агрессивная версия
+! Обновлено: 2025-06-22
+!Yandex
 ||api.browser.yandex.ru^$important
 ||an.yandex.ru^
 ||mc.yandex.ru^
@@ -94,10 +121,7 @@
 ||yandex.uz^*/ads*
 ||ads.adfox.com^
 ||yandex.net^*/ads*
-||sz.kz^
-! Блокировка рекламы Яндекса — агрессивная версия
-! Обновлено: 2025-06-22
-
+||yandex.ru^
 ! === Доменная реклама ===
 ||an.yandex.ru^
 ||mc.yandex.ru^
@@ -111,7 +135,6 @@
 ||cdn.adfox.ru^
 ||adsdk.yandex.ru^
 ||adsdk.yandex.net^
-
 ! === Удаление рекламных блоков на сайтах Яндекса ===
 yandex.ru##div[class*="banner"]
 yandex.ru##div[class*="adv"]
@@ -127,26 +150,24 @@ yandex.ru##.yabs-advanced__popup
 yandex.ru##.yabs-advanced__container
 yandex.ru##.promo
 yandex.ru##.adfox
-
 ! Удаление блоков Директ
 yandex.ru##.organic__subtitle:has-text(Директ)
 yandex.ru##.organic__content:has(.label_theme_direct)
 yandex.ru##.serp-item:has(.label_theme_direct)
 yandex.ru##.serp-item:has-text(Реклама)
-
 ! Кинопоиск, Дзен, Маркет
 zen.yandex.ru##.adfox-banner
 kinopoisk.ru##.ad-banner
 market.yandex.ru##div[class*="banner"]
 market.yandex.ru##div[class*="advert"]
-
 ! Удаление рекомендаций (как реклама)
 zen.yandex.ru##.feed__item:has(.promo-label)
 zen.yandex.ru##.promo-label
 zen.yandex.ru##.infinite-scroll__item:has(.adfox)
-
 ! Скрипты и пиксели трекинга
 ||mc.yandex.ru/watch/*
 ||mc.yandex.ru/metrika/*
 ||*.yandex.ru/static/ads/*
+
+
 
