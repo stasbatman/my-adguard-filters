@@ -1,3 +1,5 @@
+!Разрешено
+
 @@||imap.yandex.com^$important
 @@||smtp.yandex.com^$important
 @@||signaler-pa.clients6.google.com^$important
@@ -22,17 +24,32 @@
 @@||firebaseremoteconfig.googleapis.com^$important
 @@||video-edge-781a4e.sjc05.hls.live-video.net^
 @@||vid103.lencdn.com^
+
+!Блок
 ||key1.no-ip.org^
 ||www.meituan.com^
-||www.google.us^
 ||www.sohu.com^
 ||www.163.com^
-||storage.mds.yandex.net^
 ||glitchtip.jgeek00.com^
 ||conn-service-us-04.allawnos.com^a
-||spot-pa.googleapis.com^
 ||iron-dot-cobalt-antenna-219709.appspot.com^$important
-||dnsotls-ds.metric.gstatic.com^ 
+||skrinshoter.ru^$important
+||cdn.jsdelivr.net^$important
+||pgl.yoyo.org^$important
+||driveroff.net^
+||www.qq.com^
+||content.moosic.io^
+||ocsp.entrust.net^
+||dzen.ru^$imporant
+||firebase-settings.crashlytics.com^$important
+||sz.kz^
+
+
+!Google
+||-----------------------------------------fonts.gstatic.com ^
+||.clients2.google.com ^
+||www.google.us^
+||dnsotls-ds.metric.gstatic.com^
 ||encrypted-tbn0.gstatic.com^
 ||encrypted-tbn2.gstatic.com^
 ||mtalk.google.com^
@@ -52,43 +69,14 @@
 ||apis.google.com^
 ||0.client-channel.google.com^
 ||clients2.google.com^
-||skrinshoter.ru^$important
-||cdn.jsdelivr.net^$important
-||pgl.yoyo.org^$important
-||driveroff.net^
-||www.qq.com^
-||content.moosic.io^
-||ocsp.entrust.net^
-||dzen.ru^$imporant
-||firebase-settings.crashlytics.com^$important
-||sz.kz^
+||spot-pa.googleapis.com^
 
-!Google
-||dnsotls-ds.metric.gstatic.com^
-||encrypted-tbn0.gstatic.com^
-||encrypted-tbn2.gstatic.com^
-||mtalk.google.com^
-||metric.gstatic.com^
-||chart.apis.google.com^
-||cse.google.com^
-||encrypted-tbn1.gstatic.com^
-||www.gstatic.com^
-||-----------------------------------------fonts.gstatic.com ^
-||ogs.google.com^
-||ssl.gstatic.com^
-||aa.google.com^
-||encrypted-tbn3.gstatic.com^
-||pki-goog.l.google.com^
-||signaler-pa.clients6.google.com^
-||addons-pa.clients6.google.com^
-||apis.google.com^
-||0.client-channel.google.com^
-||.clients2.google.com ^
 
 
 ! Блокировка рекламы Яндекса — агрессивная версия
 ! Обновлено: 2025-06-22
 !Yandex
+||storage.mds.yandex.net^
 ||api.browser.yandex.ru^$important
 ||an.yandex.ru^
 ||mc.yandex.ru^
@@ -99,18 +87,9 @@
 ||yandex.ru/ads^
 ||yastatic.net/ads^
 ||yandex.ru/showcaptcha^
-||an.yandex.ru^
-||mc.yandex.ru^
-||yandexadexchange.net^
-||yandex.ru/ads^
-||yastatic.net/ads^
-||yandex.ru/showcaptcha^
 ||avatars.mds.yandex.net/get-ads^
-||ads.adfox.ru^
-||banners.adfox.ru^
 ||metrika.yandex.ru^
 ||redirect.appmetrica.yandex.com^
-||clck.yandex.ru^
 ||yandex.com/ads^
 ||adsdk.yandex.ru^
 ||offerwall.yandex.ru^
@@ -122,19 +101,14 @@
 ||ads.adfox.com^
 ||yandex.net^*/ads*
 ||yandex.ru^
+
 ! === Доменная реклама ===
-||an.yandex.ru^
-||mc.yandex.ru^
 ||yabs.yandex.ru^
 ||adfox.yandex.ru^
-||redirect.appmetrica.yandex.com^
 ||awaps.yandex.net^
-||yandexadexchange.net^
-||ads.adfox.ru^
-||clck.yandex.ru^
 ||cdn.adfox.ru^
-||adsdk.yandex.ru^
 ||adsdk.yandex.net^
+
 ! === Удаление рекламных блоков на сайтах Яндекса ===
 yandex.ru##div[class*="banner"]
 yandex.ru##div[class*="adv"]
@@ -150,24 +124,25 @@ yandex.ru##.yabs-advanced__popup
 yandex.ru##.yabs-advanced__container
 yandex.ru##.promo
 yandex.ru##.adfox
+
 ! Удаление блоков Директ
 yandex.ru##.organic__subtitle:has-text(Директ)
 yandex.ru##.organic__content:has(.label_theme_direct)
 yandex.ru##.serp-item:has(.label_theme_direct)
 yandex.ru##.serp-item:has-text(Реклама)
+
 ! Кинопоиск, Дзен, Маркет
 zen.yandex.ru##.adfox-banner
 kinopoisk.ru##.ad-banner
 market.yandex.ru##div[class*="banner"]
 market.yandex.ru##div[class*="advert"]
+
 ! Удаление рекомендаций (как реклама)
 zen.yandex.ru##.feed__item:has(.promo-label)
 zen.yandex.ru##.promo-label
 zen.yandex.ru##.infinite-scroll__item:has(.adfox)
+
 ! Скрипты и пиксели трекинга
 ||mc.yandex.ru/watch/*
 ||mc.yandex.ru/metrika/*
 ||*.yandex.ru/static/ads/*
-
-
-
