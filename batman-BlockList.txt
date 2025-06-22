@@ -146,3 +146,14 @@ zen.yandex.ru##.infinite-scroll__item:has(.adfox)
 ||mc.yandex.ru/watch/*
 ||mc.yandex.ru/metrika/*
 ||*.yandex.ru/static/ads/*
+
+!RethinkDNS
+||yastatic.net^
+||an.yandex.ru^
+||avatars.mds.yandex.net^
+||favicon.yandex.net^
+||sba.yandex.net^
+||api.browser.yandex.ru^
+||api.browser.yandex.kz^
+||api.browser.yandex.net^
+||yandex.ru^
