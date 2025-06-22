@@ -157,3 +157,24 @@ zen.yandex.ru##.infinite-scroll__item:has(.adfox)
 ||api.browser.yandex.kz^
 ||api.browser.yandex.net^
 ||yandex.ru^
+
+! Блокировка рекламы Яндекса (Яндекс Видео, Поиск, Почта)
+||ads.adfox.ru^$important
+||yabs.yandex.ru^$important
+||an.yandex.ru^$important
+||mc.yandex.ru^$important
+||adsdk.yandex.net^$important
+||yandex.ru/ads^$important
+||yandex.ru/clck^$important
+||yandex.ru/showad^$important
+||video.yandex.ru/api/ads^$important
+||video.yandex.ru/api/show_ad^$important
+||static.criteo.net^$important
+||advertising.yandex.ru^$important
+||direct.yandex.ru^$important
+||adfox.yandex.ru^$important
+||*.adfox.ru^$important
+||storage.mds.yandex.net/get-ads^$important
+||ads.yandex.ru^$important
+||extmaps-api.maps.yandex.net/ads^$important
+
