@@ -75,6 +75,7 @@
 ! Обновлено: 2025-06-22
 
 ! === Основные рекламные домены ===
+||yandex.ru^$important
 ||an.yandex.ru^$important
 ||mc.yandex.ru^$important
 ||yabs.yandex.ru^$important
