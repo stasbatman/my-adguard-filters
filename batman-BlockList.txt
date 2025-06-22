@@ -71,44 +71,50 @@
 ||clients2.google.com^
 ||spot-pa.googleapis.com^
 
+! Блокировка рекламы Яндекса — агрессивная и точная версия
+! Обновлено: 2025-06-22
 
+! === Основные рекламные домены ===
+||an.yandex.ru^$important
+||mc.yandex.ru^$important
+||yabs.yandex.ru^$important
+||adfox.yandex.ru^$important
+||adsdk.yandex.net^$important
+||adsdk.yandex.ru^$important
+||yandexadexchange.net^$important
+||ads.adfox.ru^$important
+||*.adfox.ru^$important
+||clck.yandex.ru^$important
+||cdn.adfox.ru^$important
+||redirect.appmetrica.yandex.com^$important
+||awaps.yandex.net^$important
+||advertising.yandex.ru^$important
+||direct.yandex.ru^$important
+||video.yandex.ru/api/ads^$important
+||video.yandex.ru/api/show_ad^$important
+||yandex.ru/showad^$important
+||yandex.ru/ads^$important
 
-! Блокировка рекламы Яндекса — агрессивная версия
-!Yandex
-||storage.mds.yandex.net^
+! === Блокировка видео-рекламы и медиасерверов (точечная) ===
+||video-eu-*.yandex.net^$important
+||*.live-video.net^$important
+||storage.mds.yandex.net/get-ads?$important
+||extmaps-api.maps.yandex.net/ads^$important
+
+! === Блокировка API Яндекс.Браузера ===
 ||api.browser.yandex.ru^$important
-||an.yandex.ru^
-||mc.yandex.ru^
-||yandexadexchange.net^
-||ads.adfox.ru^
-||banners.adfox.ru^
-||clck.yandex.ru^
-||yandex.ru/ads^
-||yastatic.net/ads^
-||yandex.ru/showcaptcha^
-||avatars.mds.yandex.net/get-ads^
-||metrika.yandex.ru^
-||redirect.appmetrica.yandex.com^
-||yandex.com/ads^
-||adsdk.yandex.ru^
-||offerwall.yandex.ru^
-||mc.yandex.com^
-||yandex.by^*/ads*
-||yandex.kz^*/ads*
-||yandex.ua^*/ads*
-||yandex.uz^*/ads*
-||ads.adfox.com^
-||yandex.net^*/ads*
-||yandex.ru^
+||api.browser.yandex.kz^$important
+||api.browser.yandex.net^$important
 
-! === Доменная реклама ===
-||yabs.yandex.ru^
-||adfox.yandex.ru^
-||awaps.yandex.net^
-||cdn.adfox.ru^
-||adsdk.yandex.net^
+! === Редкие и будущие поддомены рекламы и CDN ===
+||ads5.adfox.ru^$important
+||ads6.adfox.ru^$important
+||ads6-rt.adfox.ru^$important
+||mobile.yandexadexchange.net^$important
+||*.edge.yandex.net^$important
+||*.cdn.yandex.net^$important
 
-! === Удаление рекламных блоков на сайтах Яндекса ===
+! === CSS-блокировка рекламных блоков на сайтах Яндекса ===
 yandex.ru##div[class*="banner"]
 yandex.ru##div[class*="adv"]
 yandex.ru##div[class*="Ad"]
@@ -124,7 +130,7 @@ yandex.ru##.yabs-advanced__container
 yandex.ru##.promo
 yandex.ru##.adfox
 
-! Удаление блоков Директ
+! Удаление блоков Яндекс.Директа
 yandex.ru##.organic__subtitle:has-text(Директ)
 yandex.ru##.organic__content:has(.label_theme_direct)
 yandex.ru##.serp-item:has(.label_theme_direct)
@@ -136,45 +142,22 @@ kinopoisk.ru##.ad-banner
 market.yandex.ru##div[class*="banner"]
 market.yandex.ru##div[class*="advert"]
 
-! Удаление рекомендаций (как реклама)
+! Удаление рекомендованных записей в Дзене
 zen.yandex.ru##.feed__item:has(.promo-label)
 zen.yandex.ru##.promo-label
 zen.yandex.ru##.infinite-scroll__item:has(.adfox)
 
-! Скрипты и пиксели трекинга
+! Скрипты и пиксели трекинга (точечно)
 ||mc.yandex.ru/watch/*
 ||mc.yandex.ru/metrika/*
 ||*.yandex.ru/static/ads/*
 
-!RethinkDNS
-||yastatic.net^
-||an.yandex.ru^
-||avatars.mds.yandex.net^
-||favicon.yandex.net^
-||sba.yandex.net^
-||api.browser.yandex.ru^
-||api.browser.yandex.kz^
-||api.browser.yandex.net^
-||yandex.ru^
+! === Что НЕ блокируется для нормальной загрузки картинок и иконок ===
+! (Разрешены)
+! avatars.mds.yandex.net — аватары
+! favicon.yandex.net — фавиконки
+! storage.mds.yandex.net — медиа, кроме рекламы
+! НЕ блокируем yandex.ru целиком, чтобы не ломать почту, поиск, карты
 
-! Блокировка рекламы Яндекса (Яндекс Видео, Поиск, Почта)
-||ads.adfox.ru^$important
-||yabs.yandex.ru^$important
-||an.yandex.ru^$important
-||mc.yandex.ru^$important
-||adsdk.yandex.net^$important
-||yandex.ru/ads^$important
-||yandex.ru/clck^$important
-||yandex.ru/showad^$important
-||video.yandex.ru/api/ads^$important
-||video.yandex.ru/api/show_ad^$important
-||static.criteo.net^$important
-||advertising.yandex.ru^$important
-||direct.yandex.ru^$important
-||adfox.yandex.ru^$important
-||*.adfox.ru^$important
-||storage.mds.yandex.net/get-ads^$important
-||ads.yandex.ru^$important
-||extmaps-api.maps.yandex.net/ads^$important
-||video-eu-*.yandex.net^$important
-||*.live-video.net^$important
+
+
