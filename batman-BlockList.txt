@@ -57,7 +57,6 @@
 ||chart.apis.google.com^
 ||cse.google.com^
 ||encrypted-tbn1.gstatic.com^
-||www.gstatic.com^
 ||fonts.gstatic.com^
 ||ogs.google.com^
 ||ssl.gstatic.com^
@@ -95,6 +94,7 @@
 ||video.yandex.ru/api/show_ad^$important
 ||yandex.ru/showad^$important
 ||yandex.ru/ads^$important
+||sec.api.browser.yandex.by^$important
 
 ! === Блокировка видео-рекламы и медиасерверов (точечная) ===
 ||video-eu-*.yandex.net^$important
