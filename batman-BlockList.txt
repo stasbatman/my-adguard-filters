@@ -177,4 +177,6 @@ zen.yandex.ru##.infinite-scroll__item:has(.adfox)
 ||storage.mds.yandex.net/get-ads^$important
 ||ads.yandex.ru^$important
 ||extmaps-api.maps.yandex.net/ads^$important
+||video-eu-*.yandex.net^$important
+||*.live-video.net^$important
 
