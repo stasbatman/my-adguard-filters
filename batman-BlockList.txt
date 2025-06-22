@@ -94,3 +94,58 @@
 ||yandex.uz^*/ads*
 ||ads.adfox.com^
 ||yandex.net^*/ads*
+! Блокировка рекламы Яндекса — агрессивная версия
+! Обновлено: 2025-06-22
+
+! === Доменная реклама ===
+||an.yandex.ru^
+||mc.yandex.ru^
+||yabs.yandex.ru^
+||adfox.yandex.ru^
+||redirect.appmetrica.yandex.com^
+||awaps.yandex.net^
+||yandexadexchange.net^
+||ads.adfox.ru^
+||clck.yandex.ru^
+||cdn.adfox.ru^
+||adsdk.yandex.ru^
+||adsdk.yandex.net^
+
+! === Удаление рекламных блоков на сайтах Яндекса ===
+yandex.ru##div[class*="banner"]
+yandex.ru##div[class*="adv"]
+yandex.ru##div[class*="Ad"]
+yandex.ru##div[class*="yabs"]
+yandex.ru##div[class*="direct"]
+yandex.ru##div[data-bem*="banner"]
+yandex.ru##div[data-bem*="adv"]
+yandex.ru##.serp-item[data-fast-name="advert"]
+yandex.ru##.main__right > div:has(.direct)
+yandex.ru##.direct
+yandex.ru##.yabs-advanced__popup
+yandex.ru##.yabs-advanced__container
+yandex.ru##.promo
+yandex.ru##.adfox
+
+! Удаление блоков Директ
+yandex.ru##.organic__subtitle:has-text(Директ)
+yandex.ru##.organic__content:has(.label_theme_direct)
+yandex.ru##.serp-item:has(.label_theme_direct)
+yandex.ru##.serp-item:has-text(Реклама)
+
+! Кинопоиск, Дзен, Маркет
+zen.yandex.ru##.adfox-banner
+kinopoisk.ru##.ad-banner
+market.yandex.ru##div[class*="banner"]
+market.yandex.ru##div[class*="advert"]
+
+! Удаление рекомендаций (как реклама)
+zen.yandex.ru##.feed__item:has(.promo-label)
+zen.yandex.ru##.promo-label
+zen.yandex.ru##.infinite-scroll__item:has(.adfox)
+
+! Скрипты и пиксели трекинга
+||mc.yandex.ru/watch/*
+||mc.yandex.ru/metrika/*
+||*.yandex.ru/static/ads/*
+
