@@ -178,4 +178,3 @@ zen.yandex.ru##.infinite-scroll__item:has(.adfox)
 ||extmaps-api.maps.yandex.net/ads^$important
 ||video-eu-*.yandex.net^$important
 ||*.live-video.net^$important
-
