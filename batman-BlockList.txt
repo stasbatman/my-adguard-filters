@@ -46,18 +46,30 @@
 
 
 !Google
-||fonts.gstatic.com^
-||encrypted-tbn0.gstatic.com^
-||encrypted-tbn1.gstatic.com^
-||encrypted-tbn2.gstatic.com^
-||encrypted-tbn3.gstatic.com^
-||metric.gstatic.com^
-||dnsotls-ds.metric.gstatic.com^
-||chart.apis.google.com^
-||cse.google.com^
-||ogs.google.com^
-||aa.google.com^
-||www.google.us^
+! === Google: Блокировка рекламы и трекеров ===
+
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||pagead2.googlesyndication.com^
+||tpc.googlesyndication.com^
+||partner.googleadservices.com^
+||adservice.google.com^
+||adservice.google.*/^
+||adclick.g.doubleclick.net^
+||cm.g.doubleclick.net^
+||google-analytics.com^
+||ssl.google-analytics.com^
+||analytics.google.com^
+||tagmanager.google.com^
+||googletagmanager.com^
+||googletagservices.com^
+||conversiontracking.google.com^
+||ads.google.com^
+||adssettings.google.com^
+||adsmeasurement.google.com^
+||pagead-googlehosted.l.google.com^
+
 
 
 ! Блокировка рекламы Яндекса — агрессивная и точная версия
