@@ -46,29 +46,19 @@
 
 
 !Google
-||-----------------------------------------fonts.gstatic.com ^
-||.clients2.google.com ^
-||www.google.us^
-||dnsotls-ds.metric.gstatic.com^
+||fonts.gstatic.com^
 ||encrypted-tbn0.gstatic.com^
+||encrypted-tbn1.gstatic.com^
 ||encrypted-tbn2.gstatic.com^
-||mtalk.google.com^
+||encrypted-tbn3.gstatic.com^
 ||metric.gstatic.com^
+||dnsotls-ds.metric.gstatic.com^
 ||chart.apis.google.com^
 ||cse.google.com^
-||encrypted-tbn1.gstatic.com^
-||fonts.gstatic.com^
 ||ogs.google.com^
-||ssl.gstatic.com^
 ||aa.google.com^
-||encrypted-tbn3.gstatic.com^
-||pki-goog.l.google.com^
-||signaler-pa.clients6.google.com^
-||addons-pa.clients6.google.com^
-||apis.google.com^
-||0.client-channel.google.com^
-||clients2.google.com^
-||spot-pa.googleapis.com^
+||www.google.us^
+
 
 ! Блокировка рекламы Яндекса — агрессивная и точная версия
 ! Обновлено: 2025-06-22
