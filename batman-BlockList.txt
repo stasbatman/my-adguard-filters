@@ -24,6 +24,9 @@
 @@||firebaseremoteconfig.googleapis.com^$important
 @@||video-edge-781a4e.sjc05.hls.live-video.net^
 @@||vid103.lencdn.com^
+@@||redirector.googlevideo.com^$important
+@@||ingest.twitch.tv^$important
+@@||ingest.global-contribute.live-video.net^$important
 
 !Блок
 ||key1.no-ip.org^
