@@ -27,6 +27,8 @@
 @@||redirector.googlevideo.com^$important
 @@||ingest.twitch.tv^$important
 @@||ingest.global-contribute.live-video.net^$important
+@@||browser.events.data.microsoft.com^$important
+@@||v10.events.data.microsoft.com^$important
 
 !Блок
 ||key1.no-ip.org^
