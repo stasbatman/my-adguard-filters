@@ -22,11 +22,8 @@
 @@||c.pki.goog^$important
 @@||eu-mobile.events.data.microsoft.com^$important
 @@||firebaseremoteconfig.googleapis.com^$important
-@@||video-edge-781a4e.sjc05.hls.live-video.net^
 @@||vid103.lencdn.com^
-@@||redirector.googlevideo.com^$important
 @@||ingest.twitch.tv^$important
-@@||ingest.global-contribute.live-video.net^$important
 @@||browser.events.data.microsoft.com^$important
 @@||v10.events.data.microsoft.com^$important
 
@@ -105,7 +102,6 @@
 
 ! === Блокировка видео-рекламы и медиасерверов (точечная) ===
 ||video-eu-*.yandex.net^$important
-||*.live-video.net^$important
 ||storage.mds.yandex.net/get-ads?$important
 ||extmaps-api.maps.yandex.net/ads^$important
 
