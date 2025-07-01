@@ -45,7 +45,7 @@
 ||dzen.ru^$important
 ||firebase-settings.crashlytics.com^$important
 ||sz.kz^$important
-||apiok.net^$important
+||*.apiok.net^
 ||ads.com^$important
 ||ggpht.com^$important
 ||mobshark.net^$important
