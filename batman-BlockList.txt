@@ -48,6 +48,7 @@
 ||apiok.net^$important
 ||ads.com^$important
 ||ggpht.com^$important
+||mobshark.net^$important
 
 ! Google
 ! === Google: Блокировка рекламы и трекеров ===
