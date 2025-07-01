@@ -44,7 +44,11 @@
 ||ocsp.entrust.net^
 ||dzen.ru^$imporant
 ||firebase-settings.crashlytics.com^$important
-||sz.kz^
+||sz.kz^^$important
+||apiok.net^$important
+||ytimg.com^$important
+||ads.com^$important
+||ggpht.com^$important
 
 
 !Google
