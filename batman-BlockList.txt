@@ -52,6 +52,8 @@
 ||flat-ads.com^$important
 ||rayjump.com^$important
 ||crashlytics.com^$important
+||api.urioy.com^
+||urioy.com^
 
 ! Google
 ! === Google: Блокировка рекламы и трекеров ===
