@@ -108,4 +108,57 @@
 ! === Блокировка API Яндекс.Браузера ===
 ||api.browser.yandex.ru^$important
 ||api.browser.yandex.kz^$important
-||api.browser.
+||api.browser.yandex.net^$important
+
+! === Редкие и будущие поддомены рекламы и CDN ===
+||ads5.adfox.ru^$important
+||ads6.adfox.ru^$important
+||ads6-rt.adfox.ru^$important
+||mobile.yandexadexchange.net^$important
+||*.edge.yandex.net^$important
+||*.cdn.yandex.net^$important
+
+! === CSS-блокировка рекламных блоков на сайтах Яндекса ===
+yandex.ru##div[class*="banner"]
+yandex.ru##div[class*="adv"]
+yandex.ru##div[class*="Ad"]
+yandex.ru##div[class*="yabs"]
+yandex.ru##div[class*="direct"]
+yandex.ru##div[data-bem*="banner"]
+yandex.ru##div[data-bem*="adv"]
+yandex.ru##.serp-item[data-fast-name="advert"]
+yandex.ru##.main__right > div:has(.direct)
+yandex.ru##.direct
+yandex.ru##.yabs-advanced__popup
+yandex.ru##.yabs-advanced__container
+yandex.ru##.promo
+yandex.ru##.adfox
+
+! Удаление блоков Яндекс.Директа
+yandex.ru##.organic__subtitle:has-text(Директ)
+yandex.ru##.organic__content:has(.label_theme_direct)
+yandex.ru##.serp-item:has(.label_theme_direct)
+yandex.ru##.serp-item:has-text(Реклама)
+
+! Кинопоиск, Дзен, Маркет
+zen.yandex.ru##.adfox-banner
+kinopoisk.ru##.ad-banner
+market.yandex.ru##div[class*="banner"]
+market.yandex.ru##div[class*="advert"]
+
+! Удаление рекомендованных записей в Дзене
+zen.yandex.ru##.feed__item:has(.promo-label)
+zen.yandex.ru##.promo-label
+zen.yandex.ru##.infinite-scroll__item:has(.adfox)
+
+! Скрипты и пиксели трекинга (точечно)
+||mc.yandex.ru/watch/*
+||mc.yandex.ru/metrika/*
+||*.yandex.ru/static/ads/*
+
+! === Что НЕ блокируется для нормальной загрузки картинок и иконок ===
+! (Разрешены)
+! avatars.mds.yandex.net — аватары
+! favicon.yandex.net — фавиконки
+! storage.mds.yandex.net — медиа, кроме рекламы
+! НЕ блокируем yandex.ru целиком, чтобы не ломать почту, поиск, карты
