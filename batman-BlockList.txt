@@ -55,6 +55,18 @@
 ||api.urioy.com^
 ||urioy.com^
 
+! === YouTube AdBlock Minimal ===
+
+! Блокировка рекламы и трекеров YouTube
+||youtube.com/get_video_info?*adformat=
+||youtube.com/api/stats/ads?*
+||youtube.com/pagead/*
+||youtube.com/ptracking
+||googleads.g.doubleclick.net^
+||doubleclick.net^
+||youtubei.googleapis.com/youtubei/v1/ads*
+
+
 ! Google
 ! === Google: Блокировка рекламы и трекеров ===
 
