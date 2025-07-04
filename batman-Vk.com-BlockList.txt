@@ -1,0 +1,37 @@
+! Блокировка рекламы ВКонтакте (vk.com) — агрессивная версия
+
+! Рекламные баннеры и блоки
+vk.com##.ads_ads
+vk.com##.ads_container
+vk.com##.ads_block
+vk.com##.ads_w
+vk.com##.ads_w2
+vk.com##.ads_300x250
+vk.com##.ads_wide
+vk.com##.ads_banner
+vk.com##.ads_banner_wrap
+vk.com##.ads_right_column
+vk.com##.ads_top_banner
+
+! Видео-реклама
+vk.com##.video_ad
+vk.com##.video_ad_label
+
+! Рекламные вставки в ленте
+vk.com##.feed_ad
+vk.com##.feed_ad_block
+vk.com##.feed_ad_item
+
+! Скрытие рекламных ссылок
+vk.com##a[href*="vk.com/ads"]
+vk.com##a[href*="ads.vk.com"]
+
+! Удаление рекламных iframe
+vk.com##iframe[src*="ads"]
+
+! Блокировка доменов рекламы ВКонтакте
+||ads.vk.com^$important
+||ads.apis.google.com^$important
+||ad.mail.ru^$important
+||an.yandex.ru^$important
+||vk.com/ad_service^$important
