@@ -4,6 +4,12 @@
 ! Обновлено: 2025-07-04
 ! ==========================================
 
+!Моя блокировка
+||yandex.ru^$important
+||yastatic.net^$important
+||yandex.ru^$important
+||yastatic.net^$important
+
 ! === 1. Основные рекламные и трекинг-домены ===
 ||an.yandex.ru^$important
 ||an.yandex.net^$important
