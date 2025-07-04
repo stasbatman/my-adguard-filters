@@ -84,8 +84,10 @@ kinopoisk.ru##.ad-banner
 market.yandex.ru##div[class*="banner"]
 market.yandex.ru##div[class*="advert"]
 
-! === 7. Что НЕ блокируется для нормальной загрузки ===
+! === 7. Что НЕ блокируется для нормальной работы Почты и Диска ===
 ! avatars.mds.yandex.net — аватары
 ! favicon.yandex.net — фавиконки
 ! storage.mds.yandex.net — медиа без рекламы
+! mail.yandex.ru — разрешено
+! disk.yandex.ru — разрешено
 ! НЕ блокировать yandex.ru целиком!
