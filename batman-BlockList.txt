@@ -53,8 +53,6 @@
 ||mediacdn.ru^$important
 ||*.mediacdn.ru^$important
 
-
-
 ! === YouTube AdBlock Minimal ===
 
 ! Блокировка рекламы и трекеров YouTube
@@ -65,29 +63,3 @@
 ||googleads.g.doubleclick.net^
 ||doubleclick.net^
 ||youtubei.googleapis.com/youtubei/v1/ads*
-
-
-! Google
-! === Google: Блокировка рекламы и трекеров ===
-
-||doubleclick.net^
-||googleadservices.com^
-||googlesyndication.com^
-||pagead2.googlesyndication.com^
-||tpc.googlesyndication.com^
-||partner.googleadservices.com^
-||adservice.google.com^
-||adservice.google.*/^
-||adclick.g.doubleclick.net^
-||cm.g.doubleclick.net^
-||google-analytics.com^
-||ssl.google-analytics.com^
-||analytics.google.com^
-||tagmanager.google.com^
-||googletagmanager.com^
-||googletagservices.com^
-||conversiontracking.google.com^
-||ads.google.com^
-||adssettings.google.com^
-||adsmeasurement.google.com^
-||pagead-googlehosted.l.google.com^
