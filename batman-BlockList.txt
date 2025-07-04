@@ -47,6 +47,10 @@
 ||crashlytics.com^$important
 ||api.urioy.com^
 ||urioy.com^
+||cdnvideo.ru^$important
+||mediacdn.ru^$important
+||adfox.ru^$important
+
 
 ! === YouTube AdBlock Minimal ===
 
