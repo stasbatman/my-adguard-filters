@@ -1,7 +1,4 @@
 ! Разрешено
-
-@@||imap.yandex.com^$important
-@@||smtp.yandex.com^$important
 @@||signaler-pa.clients6.google.com^$important
 @@||addons-pa.clients6.google.com^$important
 @@||clients2.google.com^$important
@@ -10,7 +7,6 @@
 @@||event.platform.tunein.com^$important
 @@||telemetry-in.battle.net^$important
 @@||spade.twitch.tv^
-@@||disk.yandex.ru
 @@||crl.pki.goog^$important
 @@||ocsp.entrust.net^$important
 @@||mtalk.google.com^$important
