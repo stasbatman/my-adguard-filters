@@ -47,11 +47,7 @@
 ||crashlytics.com^$important
 ||api.urioy.com^
 ||urioy.com^
-||cdnvideo.ru^$important
 ||adfox.ru^$important
-! === Блокировка mediacdn.ru ===
-||mediacdn.ru^$important
-||*.mediacdn.ru^$important
 
 ! === YouTube AdBlock Minimal ===
 
