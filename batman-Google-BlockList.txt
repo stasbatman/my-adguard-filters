@@ -1,0 +1,85 @@
+! Custom Google Ads & Tracking Blocklist for AdGuard
+! Updated July 2025
+
+! === Ads & DoubleClick ===
+||adclick.g.doubleclick.net^
+||addons-pa.clients6.google.com^
+||admob.com^
+||ads.g.doubleclick.net^
+||ads.google.com^
+||adservice.google.*/^
+||adservice.google.co*^
+||adservice.google.com^
+||adsmeasurement.google.com^
+||adssettings.google.com^
+||adwords.google.*/^
+||adwords.google.com^
+||apps.admob.com^
+||cm.g.doubleclick.net^
+||doubleclick.net^
+||fls.doubleclick.net^
+||g.doubleclick.net^
+||googleadservices.com^
+||googleleadservices.com^
+||googlesyndication.com^
+||m.doubleclick.net^
+||pagead-googlehosted.l.google.com^
+||pagead-googlehosted.l.googleusercontent.com^
+||pagead.l.doubleclick.net^
+||pagead2.googlesyndication.com^
+||partner.googleadservices.com^
+||partnerad.l.doubleclick.net^
+||pubads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||tpc.googlesyndication.com^
+||video-ad-stats.l.google.com^
+
+! === Analytics & Tag Manager ===
+||adsmeasurement.google.com^
+||analytics.google.com^
+||app-measurement.com^
+||google-analytics.com^
+||googletagmanager.com^
+||ssl-googletagmanager.l.google.com^
+||ssl.google-analytics.com^
+||tagmanager.google.com^
+||www.googletagmanager.com^
+
+! === Firebase & Crashlytics ===
+||firebase-settings.crashlytics.com^
+||firebaseinstallations.googleapis.com^
+||firebaselogging-pa.googleapis.com^
+
+! === GStatic, Fonts & Google CDN ===
+||dnsotls-ds.metric.gstatic.com^
+||encrypted-tbn0.gstatic.com^
+||encrypted-tbn1.gstatic.com^
+||encrypted-tbn2.gstatic.com^
+||encrypted-tbn3.gstatic.com^
+||fonts.gstatic.com^
+||metric.gstatic.com^
+||mtalk.google.com^
+||ssl.gstatic.com^
+||www.gstatic.com^
+
+! === Other Google Services (APIs, PKI, etc.) ===
+||0.client-channel.google.com^
+||aa.google.com^
+||apis.google.com^
+||chart.apis.google.com^
+||clients1.google.com^
+||clients2.google.com^
+||clients3.google.com^
+||clients4.google.com^
+||clients5.google.com^
+||clients6.google.com^
+||conversiontracking.google.com^
+||cse.google.com^
+||geomobileservices-pa.googleapis.com^
+||googletagservices.com^
+||ogs.google.com^
+||pki-goog.l.google.com^
+||signaler-pa.clients6.google.com^
+||ssl-googletagservices.l.google.com^
+||www.googletagservices.com^
