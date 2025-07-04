@@ -11,14 +11,11 @@
 @@||ocsp.entrust.net^$important
 @@||mtalk.google.com^$important
 @@||aj1907.online^$important
-@@||log.strm.yandex.ru^$important
-@@||api.passport.yandex.by^$important
 @@||aemetrics.aliexpress.ru^$important
 @@||android.apis.google.com^
 @@||c.pki.goog^$important
 @@||eu-mobile.events.data.microsoft.com^$important
 @@||firebaseremoteconfig.googleapis.com^$important
-@@||vid103.lencdn.com^
 @@||ingest.twitch.tv^$important
 @@||browser.events.data.microsoft.com^$important
 @@||v10.events.data.microsoft.com^$important
