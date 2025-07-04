@@ -1,4 +1,3 @@
-
 ! ==========================================
 ! Блокировка рекламы Яндекса — агрессивная и точная версия
 ! Формат: AdGuard
@@ -7,29 +6,50 @@
 
 ! === 1. Основные рекламные и трекинг-домены ===
 ||an.yandex.ru^$important
+||an.yandex.net^$important
 ||mc.yandex.ru^$important
+||mc.yandex.net^$important
 ||metrika.yandex.ru^$important
+||metrika.yandex.net^$important
 ||yabs.yandex.ru^$important
+||yabs.yandex.net^$important
 ||adfox.yandex.ru^$important
+||adfox.yandex.net^$important
 ||adsdk.yandex.net^$important
 ||adsdk.yandex.ru^$important
 ||yandexadexchange.net^$important
 ||ads.adfox.ru^$important
+||ads.adfox.net^$important
 ||*.adfox.ru^$important
+||*.adfox.net^$important
 ||banners.adfox.ru^$important
+||banners.adfox.net^$important
 ||clck.yandex.ru^$important
+||clck.yandex.net^$important
 ||cdn.adfox.ru^$important
+||cdn.adfox.net^$important
 ||redirect.appmetrica.yandex.com^$important
+||appmetrica.yandex.net^$important
 ||awaps.yandex.net^$important
 ||advertising.yandex.ru^$important
+||advertising.yandex.net^$important
 ||direct.yandex.ru^$important
+||direct.yandex.net^$important
 ||offerwall.yandex.ru^$important
+||offerwall.yandex.net^$important
+||mobile.yandex.net^$important
+||mds.yandex.net^$important
+||avatars.mds.yandex.net^$important
 
 ! === 2. Блокировка видео-рекламы и медиасерверов ===
 ||video.yandex.ru/api/ads^$important
+||video.yandex.net/api/ads^$important
 ||video.yandex.ru/api/show_ad^$important
+||video.yandex.net/api/show_ad^$important
 ||yandex.ru/showad^$important
+||yandex.net/showad^$important
 ||yandex.ru/ads^$important
+||yandex.net/ads^$important
 ||video-eu-*.yandex.net^$important
 ||*.live-video.net^$important
 ||storage.mds.yandex.net/get-ads?$important
@@ -42,52 +62,81 @@
 
 ! === 4. Редкие и будущие поддомены рекламы и CDN ===
 ||ads5.adfox.ru^$important
+||ads5.adfox.net^$important
 ||ads6.adfox.ru^$important
+||ads6.adfox.net^$important
 ||ads6-rt.adfox.ru^$important
+||ads6-rt.adfox.net^$important
 ||mobile.yandexadexchange.net^$important
 ||*.edge.yandex.net^$important
 ||*.cdn.yandex.net^$important
 
 ! === 5. Скрипты и трекинг-пиксели ===
 ||mc.yandex.ru/watch/*
+||mc.yandex.net/watch/*
 ||mc.yandex.ru/metrika/*
+||mc.yandex.net/metrika/*
 ||*.yandex.ru/static/ads/*
+||*.yandex.net/static/ads/*
 
 ! === 6. CSS-блокировка рекламных блоков на сайтах Яндекса ===
 yandex.ru##div[class*="banner"]
+yandex.net##div[class*="banner"]
 yandex.ru##div[class*="adv"]
+yandex.net##div[class*="adv"]
 yandex.ru##div[class*="Ad"]
+yandex.net##div[class*="Ad"]
 yandex.ru##div[class*="yabs"]
+yandex.net##div[class*="yabs"]
 yandex.ru##div[class*="direct"]
+yandex.net##div[class*="direct"]
 yandex.ru##div[data-bem*="banner"]
+yandex.net##div[data-bem*="banner"]
 yandex.ru##div[data-bem*="adv"]
+yandex.net##div[data-bem*="adv"]
 yandex.ru##.serp-item[data-fast-name="advert"]
+yandex.net##.serp-item[data-fast-name="advert"]
 yandex.ru##.main__right > div:has(.direct)
+yandex.net##.main__right > div:has(.direct)
 yandex.ru##.direct
+yandex.net##.direct
 yandex.ru##.yabs-advanced__popup
+yandex.net##.yabs-advanced__popup
 yandex.ru##.yabs-advanced__container
+yandex.net##.yabs-advanced__container
 yandex.ru##.promo
+yandex.net##.promo
 yandex.ru##.adfox
+yandex.net##.adfox
 
 ! Удаление блоков Яндекс.Директа
 yandex.ru##.organic__subtitle:has-text(Директ)
+yandex.net##.organic__subtitle:has-text(Директ)
 yandex.ru##.organic__content:has(.label_theme_direct)
+yandex.net##.organic__content:has(.label_theme_direct)
 yandex.ru##.serp-item:has(.label_theme_direct)
+yandex.net##.serp-item:has(.label_theme_direct)
 yandex.ru##.serp-item:has-text(Реклама)
+yandex.net##.serp-item:has-text(Реклама)
 
 ! Кинопоиск, Дзен, Маркет
 zen.yandex.ru##.adfox-banner
+zen.yandex.net##.adfox-banner
 zen.yandex.ru##.feed__item:has(.promo-label)
+zen.yandex.net##.feed__item:has(.promo-label)
 zen.yandex.ru##.promo-label
+zen.yandex.net##.promo-label
 zen.yandex.ru##.infinite-scroll__item:has(.adfox)
+zen.yandex.net##.infinite-scroll__item:has(.adfox)
 kinopoisk.ru##.ad-banner
 market.yandex.ru##div[class*="banner"]
+market.yandex.net##div[class*="banner"]
 market.yandex.ru##div[class*="advert"]
+market.yandex.net##div[class*="advert"]
 
 ! === 7. Что НЕ блокируется для нормальной работы Почты и Диска ===
-! avatars.mds.yandex.net — аватары
 ! favicon.yandex.net — фавиконки
 ! storage.mds.yandex.net — медиа без рекламы
-! mail.yandex.ru — разрешено
-! disk.yandex.ru — разрешено
-! НЕ блокировать yandex.ru целиком!
+! mail.yandex.ru и mail.yandex.net — разрешены
+! disk.yandex.ru и disk.yandex.net — разрешены
+! НЕ блокировать yandex.ru и yandex.net целиком!
