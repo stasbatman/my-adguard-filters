@@ -15,6 +15,7 @@
 
 !Яндек
 @@||imap.yandex.com
+@@||smtp.yandex.com
 
 !Google
 @@||firebaseremoteconfig.googleapis.com^$important
