@@ -16,6 +16,7 @@
 !Яндек
 @@||imap.yandex.com
 @@||smtp.yandex.com
+@@||passport.yandex.ru
 
 !Google
 @@||firebaseremoteconfig.googleapis.com^$important
