@@ -86,7 +86,6 @@
 ||yandex.net/ads^$important
 ||yandex.by/ads^$important
 ||video-eu-*.yandex.net^$important
-||*.live-video.net^$important
 ||storage.mds.yandex.net/get-ads?$important
 ||storage.mds.yandex.by/get-ads?$important
 ||extmaps-api.maps.yandex.net/ads^$important
