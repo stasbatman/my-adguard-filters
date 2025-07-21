@@ -29,3 +29,4 @@
 @@||signaler-pa.clients6.google.com^$important
 @@||addons-pa.clients6.google.com^$important
 @@||chromewebstore.google.com
+@@||firebaseinstallations.googleapis.com
