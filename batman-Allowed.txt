@@ -28,3 +28,4 @@
 @@||ssl.gstatic.com^$important
 @@||signaler-pa.clients6.google.com^$important
 @@||addons-pa.clients6.google.com^$important
+@@||chromewebstore.google.com
