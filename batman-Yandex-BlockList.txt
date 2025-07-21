@@ -5,7 +5,6 @@
 ! ==========================================
 
 ! === [0] Жёсткая DNS-блокировка ===
-||yandex.kz^$important
 ||yastatic.kz^$important
 ||yandex.ru^$important
 ||yastatic.net^$important
