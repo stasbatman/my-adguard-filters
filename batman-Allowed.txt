@@ -12,6 +12,7 @@
 @@||ingest.twitch.tv^$important
 @@||browser.events.data.microsoft.com^$important
 @@||v10.events.data.microsoft.com^$important
+@@||click.redditmail.com^$important
 
 !Яндек
 @@||imap.yandex.com
