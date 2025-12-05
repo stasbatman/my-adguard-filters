@@ -26,6 +26,9 @@
 ||api.urioy.com^
 ||urioy.com^
 ||adfox.ru^$important
+||webvisor.org^
+||alhapi.com^
+
 
 ! === YouTube AdBlock Minimal ===
 
