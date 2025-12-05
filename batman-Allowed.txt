@@ -31,3 +31,4 @@
 @@||addons-pa.clients6.google.com^$important
 @@||chromewebstore.google.com
 @@||firebaseinstallations.googleapis.com
+@@||imasdk.googleapis.com^$important
