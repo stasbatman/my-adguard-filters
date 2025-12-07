@@ -1,0 +1,58 @@
+! ====== TOTAL ISOLATION: NINTENDO BLOCKLIST ======
+
+||nintendo.com^
+||nintendo.net^
+||nintendo.co.jp^
+||nintendo.co.uk^
+||nintendo.jp^
+
+! eShop / Account / API
+||accounts.nintendo.com^
+||api.accounts.nintendo.com^
+||api-lp1.pctl.srv.nintendo.net^
+||ecs-lp1.hac.shop.nintendo.net^
+||bugyo.hac.lp1.d4c.nintendo.net^
+||sun.hac.lp1.d4c.nintendo.net^
+
+! Telemetry / Logs / Beacon
+||beacon.lp1.npns.srv.nintendo.net^
+||atumn.hac.lp1.d4c.nintendo.net^
+||ctest.cdn.nintendo.net^
+||sun.hac.lp1.d4c.nintendo.net^
+||aqua.hac.lp1.d4c.nintendo.net^
+
+! Network / Friends / Presence
+||friends.lp1.npns.srv.nintendo.net^
+||presence.lp1.npns.srv.nintendo.net^
+||lp1.pctl.srv.nintendo.net^
+||npns.srv.nintendo.net^
+
+! Updates (system + game)
+||atum.hac.lp1.d4c.nintendo.net^
+||superfly.hac.lp1.eshop.nintendo.net^
+||nus.c.shop.nintendo.net^
+||nus.cdn.nintendo.net^
+||ccs.cdn.nintendo.net^
+||hac.cdn.nintendo.net^
+||cdn.nintendo.net^
+
+! Multiplayer / Game Services
+||gameres.srv.nintendo.net^
+||gameres-c.nintendo.net^
+||gameres.cdn.nintendo.net^
+
+! DNS test / connectivity check
+||conntest.nintendowifi.net^
+||ctest.cdn.nintendo.net^
+||dns.next.nintendo.net^
+
+! Additional mirrors / backup hosts
+||pctl.srv.nintendo.net^
+||npns.srv.nintendo.net^
+||d4c.nintendo.net^
+||lp1.d4c.nintendo.net^
+
+! Legacy / misc
+||nintendowifi.net^
+||nintendo-europe.com^
+||nintendoeverything.com^
