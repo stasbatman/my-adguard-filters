@@ -43,7 +43,6 @@
 ||yandex.ru^$important
 ||yastatic.net^$important
 
-||yandex.kz^
 ||yandex.ru^
 ||yandex.net^
 ||yandex.by^
