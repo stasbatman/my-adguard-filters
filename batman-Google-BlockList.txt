@@ -83,3 +83,15 @@
 ||signaler-pa.clients6.google.com^
 ||ssl-googletagservices.l.google.com^
 ||www.googletagservices.com^
+
+!Google разрешено
+@@||firebaseremoteconfig.googleapis.com^$important
+@@||android.apis.google.com^
+@@||mtalk.google.com^$important
+@@||ogs.google.com^$important
+@@||ssl.gstatic.com^$important
+@@||signaler-pa.clients6.google.com^$important
+@@||addons-pa.clients6.google.com^$important
+@@||chromewebstore.google.com
+@@||firebaseinstallations.googleapis.com
+@@||imasdk.googleapis.com^$important
