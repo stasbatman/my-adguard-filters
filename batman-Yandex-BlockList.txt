@@ -1,141 +1,117 @@
 ! =====================================================================
-! AGGRESSIVE YANDEX ADS BLOCK (KZ / RU / BY / NET)
+! YANDEX DNS BLOCKLIST — FINAL
+! Платформа: NanoPi R5C
+! ОС: OpenWrt / FriendlyWRT
+! DNS: AdGuard Home
 ! Автор: Stanislav Lukin
-! Формат: AdGuard / uBlock Origin / AdGuard Home
-! Назначение: Максимальная блокировка рекламы Яндекса без поломки сервисов
+! Тип: DNS-only (router-grade)
+! Назначение: Блок рекламы, RTB и трекеров Яндекса без поломки сервисов
+! Статус: FINAL / STABLE
 ! Обновлено: 2025-12-15
 ! =====================================================================
 
 
 ! =====================================================================
-! [1] ОСНОВНЫЕ РЕКЛАМНЫЕ И RTB ДОМЕНЫ (безопасно)
+! [1] CORE ADS / RTB (ОСНОВА)
 ! =====================================================================
-||an.yandex.kz^$important
-||an.yandex.ru^$important
-||an.yandex.net^$important
-||an.yandex.by^$important
+||an.yandex.kz^
+||an.yandex.ru^
+||an.yandex.net^
+||an.yandex.by^
 
-||yabs.yandex.kz^$important
-||yabs.yandex.ru^$important
-||yabs.yandex.net^$important
-||yabs.yandex.by^$important
+||yabs.yandex.kz^
+||yabs.yandex.ru^
+||yabs.yandex.net^
+||yabs.yandex.by^
 
-||adfox.yandex.kz^$important
-||adfox.yandex.ru^$important
-||adfox.yandex.net^$important
-||adfox.yandex.by^$important
-||*.adfox.*^$important
+||adfox.yandex.kz^
+||adfox.yandex.ru^
+||adfox.yandex.net^
+||adfox.yandex.by^
+||*.adfox.*^
 
-||adsdk.yandex.kz^$important
-||adsdk.yandex.ru^$important
-||adsdk.yandex.net^$important
-||adsdk.yandex.by^$important
+||adsdk.yandex.kz^
+||adsdk.yandex.ru^
+||adsdk.yandex.net^
+||adsdk.yandex.by^
 
-||yandexadexchange.net^$important
-||mobile.yandexadexchange.net^$important
+||yandexadexchange.net^
+||mobile.yandexadexchange.net^
 
-||advertising.yandex.kz^$important
-||advertising.yandex.ru^$important
-||advertising.yandex.net^$important
-||advertising.yandex.by^$important
+||advertising.yandex.kz^
+||advertising.yandex.ru^
+||advertising.yandex.net^
+||advertising.yandex.by^
 
-||direct.yandex.kz^$important
-||direct.yandex.ru^$important
-||direct.yandex.net^$important
-||direct.yandex.by^$important
+||direct.yandex.kz^
+||direct.yandex.ru^
+||direct.yandex.net^
+||direct.yandex.by^
 
-||offerwall.yandex.net^$important
-||awaps.yandex.net^$important
-
-
-! =====================================================================
-! [2] АНАЛИТИКА И ТРЕКИНГ (не влияет на работу сервисов)
-! =====================================================================
-||mc.yandex.kz^$important
-||mc.yandex.ru^$important
-||mc.yandex.net^$important
-||mc.yandex.by^$important
-
-||metrika.yandex.kz^$important
-||metrika.yandex.ru^$important
-||metrika.yandex.net^$important
-||metrika.yandex.by^$important
-
-||appmetrica.yandex.net^$important
-||redirect.appmetrica.yandex.net^$important
-
-||clck.yandex.kz^$important
-||clck.yandex.ru^$important
-||clck.yandex.net^$important
-||clck.yandex.by^$important
+||offerwall.yandex.net^
+||awaps.yandex.net^
 
 
 ! =====================================================================
-! [3] ВИДЕО-РЕКЛАМА / ПРЕРОЛЛЫ / ДЗЕН
+! [2] ANALYTICS / TRACKING
 ! =====================================================================
-||video.yandex.*/api/ads^$important
-||video.yandex.*/api/show_ad^$important
-||yandex.*/showad^$important
-||storage.mds.yandex.net/get-ads^$important
+||mc.yandex.kz^
+||mc.yandex.ru^
+||mc.yandex.net^
+||mc.yandex.by^
 
-||zen.yandex.*/api/ads^$important
-||zen.yandex.*/promo^$important
+||metrika.yandex.kz^
+||metrika.yandex.ru^
+||metrika.yandex.net^
+||metrika.yandex.by^
+
+||appmetrica.yandex.net^
+||redirect.appmetrica.yandex.net^
+
+||clck.yandex.kz^
+||clck.yandex.ru^
+||clck.yandex.net^
+||clck.yandex.by^
+
+
+! =====================================================================
+! [3] VIDEO / ZEN / FEED ADS (DNS LEVEL)
+! =====================================================================
+||video.yandex.kz^
+||video.yandex.ru^
+||video.yandex.net^
+
+||storage.mds.yandex.net/get-ads^
+
+||zen.yandex.kz^
+||zen.yandex.ru^
+||zen.yandex.net^
 
 
 ! =====================================================================
 ! [4] MAPS / NAVI / GEO ADS
 ! =====================================================================
-||extmaps-api.maps.yandex.*/ads^$important
-||api.route.yandex.*/ads^$important
+||extmaps-api.maps.yandex.kz^
+||extmaps-api.maps.yandex.ru^
+||extmaps-api.maps.yandex.net^
+
+||api.route.yandex.kz^
+||api.route.yandex.ru^
+||api.route.yandex.net^
 
 
 ! =====================================================================
-! [5] CSS / HTML БЛОКИРОВКА (first-party реклама)
-! =====================================================================
-yandex.kz##.label_theme_direct
-yandex.kz##.serp-item:has(.label_theme_direct)
-yandex.kz##.serp-item:has-text(Реклама)
-yandex.kz##.serp-item__ad
-yandex.kz##.serp-context
-yandex.kz##[data-fast-name="advert"]
-yandex.kz##[class*="direct"]
-yandex.kz##[class*="banner"]
-yandex.kz##[class*="promo"]
-yandex.kz##iframe[src*="adfox"]
-
-yandex.ru##.label_theme_direct
-yandex.ru##.serp-item:has(.label_theme_direct)
-yandex.ru##.serp-item:has-text(Реклама)
-yandex.ru##.serp-item__ad
-yandex.ru##.serp-context
-yandex.ru##[data-fast-name="advert"]
-yandex.ru##iframe[src*="adfox"]
-
-
-! =====================================================================
-! [6] ДЗЕН / МАРКЕТ / КИНОПОИСК
-! =====================================================================
-zen.yandex.*##.promo-label
-zen.yandex.*##.feed__item:has(.promo-label)
-zen.yandex.*##.adfox-banner
-
-market.yandex.*##.promo-label
-market.yandex.*##.banner
-market.yandex.*##.adfox
-
-kinopoisk.ru##.ad-banner
-kinopoisk.ru##.adfox
-
-
-! =====================================================================
-! [7] БЕЛЫЙ СПИСОК (обязательно)
+! [5] EXPLICIT ALLOW (КРИТИЧНО ДЛЯ РАБОТЫ)
 ! =====================================================================
 @@||passport.yandex.*^
 @@||login.yandex.*^
 @@||oauth.yandex.*^
+
 @@||mail.yandex.*^
+@@||imap.yandex.com^
+@@||smtp.yandex.com^
+
 @@||disk.yandex.*^
 @@||static.yandex.net^
-@@||imap.yandex.com
-@@||smtp.yandex.com
-@@||push.yandex.ru^$important
+
+@@||push.yandex.ru^
