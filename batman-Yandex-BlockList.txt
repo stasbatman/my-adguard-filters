@@ -136,3 +136,6 @@ kinopoisk.ru##.adfox
 @@||mail.yandex.*^
 @@||disk.yandex.*^
 @@||static.yandex.net^
+@@||imap.yandex.com
+@@||smtp.yandex.com
+@@||push.yandex.ru^$important
