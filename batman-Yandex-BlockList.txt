@@ -19,6 +19,10 @@
 ||an.yandex.net^
 ||an.yandex.by^
 
+||yastatic.kz^$important
+||yandex.ru^$important
+||yastatic.net^$important
+
 ||yandex.kz^
 ||yandex.ru^
 ||yandex.net^
