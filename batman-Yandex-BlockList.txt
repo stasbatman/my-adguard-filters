@@ -19,6 +19,26 @@
 ||an.yandex.net^
 ||an.yandex.by^
 
+||api.browser.yandex.kz^$important
+||api.browser.yandex.ru^$important
+||api.browser.yandex.net^$important
+||api.browser.yandex.by^$important
+
+||cdn.adfox.kz^$important
+||cdn.adfox.ru^$important
+||cdn.adfox.net^$important
+||cdn.adfox.by^$important
+
+||*.adfox.kz^$important
+||*.adfox.ru^$important
+||*.adfox.net^$important
+||*.adfox.by^$important
+
+||banners.adfox.kz^$important
+||banners.adfox.ru^$important
+||banners.adfox.net^$important
+||banners.adfox.by^$important
+
 ||yastatic.kz^$important
 ||yandex.ru^$important
 ||yastatic.net^$important
