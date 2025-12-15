@@ -13,15 +13,3 @@
 @@||browser.events.data.microsoft.com^$important
 @@||v10.events.data.microsoft.com^$important
 @@||click.redditmail.com^$important
-
-!Google
-@@||firebaseremoteconfig.googleapis.com^$important
-@@||android.apis.google.com^
-@@||mtalk.google.com^$important
-@@||ogs.google.com^$important
-@@||ssl.gstatic.com^$important
-@@||signaler-pa.clients6.google.com^$important
-@@||addons-pa.clients6.google.com^$important
-@@||chromewebstore.google.com
-@@||firebaseinstallations.googleapis.com
-@@||imasdk.googleapis.com^$important
