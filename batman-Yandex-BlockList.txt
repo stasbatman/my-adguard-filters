@@ -19,6 +19,12 @@
 ||an.yandex.net^
 ||an.yandex.by^
 
+||yandex.kz^
+||yandex.ru^
+||yandex.net^
+||yandex.by^
+||yandex.com^
+
 ||yabs.yandex.kz^
 ||yabs.yandex.ru^
 ||yabs.yandex.net^
