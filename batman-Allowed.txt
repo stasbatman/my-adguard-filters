@@ -14,13 +14,6 @@
 @@||v10.events.data.microsoft.com^$important
 @@||click.redditmail.com^$important
 
-!Яндек
-@@||imap.yandex.com
-@@||smtp.yandex.com
-@@||passport.yandex.ru
-@@||push.yandex.ru^$important
-
-
 !Google
 @@||firebaseremoteconfig.googleapis.com^$important
 @@||android.apis.google.com^
