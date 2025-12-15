@@ -61,7 +61,6 @@
 ||metric.gstatic.com^
 ||mtalk.google.com^
 ||ssl.gstatic.com^
-||www.gstatic.com^
 
 ! === Other Google Services (APIs, PKI, etc.) ===
 ||0.client-channel.google.com^
