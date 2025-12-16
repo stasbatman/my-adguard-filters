@@ -132,15 +132,14 @@
 ! =====================================================================
 ! [5] EXPLICIT ALLOW (КРИТИЧНО ДЛЯ РАБОТЫ)
 ! =====================================================================
-@@||passport.yandex.*^
 @@||login.yandex.*^
-@@||oauth.yandex.*^
-
 @@||mail.yandex.*^
 @@||imap.yandex.com^
 @@||smtp.yandex.com^
-
 @@||disk.yandex.*^
 @@||static.yandex.net^
-
 @@||push.yandex.ru^
+@@||cloud-api.yandex.net^$important
+@@||passport.yandex.ru^$important
+@@||yastatic.net^$important
+@@||oauth.yandex.ru^$important
