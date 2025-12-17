@@ -136,6 +136,7 @@
 ||diagnostic.yandex.^
 ||telemetry.yandex.^
 ||push-ads.yandex.^
+||push.yandex.ru^
 
 
 ! =====================================================================
