@@ -108,7 +108,24 @@
 
 
 ! =====================================================================
-! [8] EXPLICIT ALLOW — MINIMAL SURVIVAL SET
+! [8]DZEN.RU — TOTAL BLOCK
+! =====================================================================
+
+||dzen.ru^
+||www.dzen.ru^
+||api.dzen.ru^
+||static.dzen.ru^
+||cdn.dzen.ru^
+||img.dzen.ru^
+||avatars.dzen.ru^
+
+||zen.yandex.ru^
+||zen.yandex.net^
+||zen-api.yandex.^
+
+
+! =====================================================================
+! [9] EXPLICIT ALLOW — MINIMAL SURVIVAL SET
 ! =====================================================================
 @@||passport.yandex.ru^$important
 @@||oauth.yandex.ru^$important
