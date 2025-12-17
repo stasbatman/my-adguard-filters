@@ -1,24 +1,26 @@
 ! =====================================================================
-! YANDEX DNS BLOCKLIST — HARD / AGGRESSIVE
+! YANDEX DNS BLOCKLIST — HARD / AGGRESSIVE + DZEN TOTAL
 ! Платформа: NanoPi R5C
 ! ОС: OpenWrt / FriendlyWRT
 ! DNS: AdGuard Home
 ! Автор: Stanislav Lukin
 ! Тип: DNS-only (router-grade)
-! Назначение: Максимальное уничтожение рекламы и трекинга Яндекса
-! Режим: AGGRESSIVE / BREAK-ZEN-ADS
-! Обновлено: 2025-12-15
+! Назначение: Максимально жесткая фильтрация Яндекса + полный выпил Dzen
+! Статус: HARD / AGGRESSIVE
+! Обновлено: 2025-12-17
 ! =====================================================================
 
 
 ! =====================================================================
-! [0] GLOBAL YANDEX AD ROOTS (ЖЕСТКО)
+! [0] GLOBAL AD / RTB ROOTS (ЖЕСТКО)
 ! =====================================================================
+||an.yandex.^
 ||yabs.yandex.^
 ||adfox.yandex.^
 ||adsdk.yandex.^
 ||advertising.yandex.^
 ||direct.yandex.^
+
 ||yandexadexchange.net^
 ||mobile.yandexadexchange.net^
 ||offerwall.yandex.net^
@@ -28,7 +30,6 @@
 ! =====================================================================
 ! [1] AD / RTB / BANNERS (MAX)
 ! =====================================================================
-||an.yandex.^
 ||ads.yandex.^
 ||banners.yandex.^
 ||promo.yandex.^
@@ -47,6 +48,7 @@
 ! =====================================================================
 ||mc.yandex.^
 ||metrika.yandex.^
+
 ||appmetrica.yandex.net^
 ||redirect.appmetrica.yandex.net^
 
@@ -57,18 +59,56 @@
 
 
 ! =====================================================================
-! [3] ZEN / FEED / RECOMMENDATION ADS
+! [3] DZEN / ZEN — TOTAL BLOCK (ru / net / com / by)
 ! =====================================================================
-||zen.yandex.^
-||zenad.yandex.^
-||zen-api.yandex.^
-||recommend.yandex.^
-||feed.yandex.^
-||personalization.yandex.^
+||dzen.ru^
+||dzen.net^
+||dzen.com^
+||dzen.by^
+
+||www.dzen.ru^
+||www.dzen.net^
+||www.dzen.com^
+||www.dzen.by^
+
+||api.dzen.ru^
+||api.dzen.net^
+||api.dzen.com^
+||api.dzen.by^
+
+||static.dzen.ru^
+||static.dzen.net^
+||static.dzen.com^
+||static.dzen.by^
+
+||cdn.dzen.ru^
+||cdn.dzen.net^
+||cdn.dzen.com^
+||cdn.dzen.by^
+
+||img.dzen.ru^
+||img.dzen.net^
+||img.dzen.com^
+||img.dzen.by^
+
+||avatars.dzen.ru^
+||avatars.dzen.net^
+||avatars.dzen.com^
+||avatars.dzen.by^
+
+||zen.yandex.ru^
+||zen.yandex.net^
+||zen.yandex.com^
+||zen.yandex.by^
+
+||zen-api.yandex.ru^
+||zen-api.yandex.net^
+||zen-api.yandex.com^
+||zen-api.yandex.by^
 
 
 ! =====================================================================
-! [4] VIDEO / MEDIA ADS (ЛОМАЕТ РЕКОМЕНДАЦИИ)
+! [4] VIDEO / MEDIA ADS
 ! =====================================================================
 ||video.yandex.^
 ||video-ads.yandex.^
@@ -79,7 +119,7 @@
 
 
 ! =====================================================================
-! [5] MAPS / NAVI / GEO ADS (ЖЕСТКО)
+! [5] MAPS / NAVI / GEO ADS
 ! =====================================================================
 ||extmaps-api.maps.yandex.^
 ||ads.maps.yandex.^
@@ -89,7 +129,7 @@
 
 
 ! =====================================================================
-! [6] SDK / MOBILE / BROWSER TRACKING
+! [6] SDK / MOBILE / BROWSER / TELEMETRY
 ! =====================================================================
 ||api.browser.yandex.^
 ||crash.yandex.^
@@ -99,7 +139,7 @@
 
 
 ! =====================================================================
-! [7] CDN USED FOR ADS (АККУРАТНО)
+! [7] CDN / STATIC USED FOR ADS & TRACKING
 ! =====================================================================
 ||yastatic.net/ads^
 ||yastatic.net/rtb^
@@ -108,24 +148,7 @@
 
 
 ! =====================================================================
-! [8]DZEN.RU — TOTAL BLOCK
-! =====================================================================
-
-||dzen.ru^
-||www.dzen.ru^
-||api.dzen.ru^
-||static.dzen.ru^
-||cdn.dzen.ru^
-||img.dzen.ru^
-||avatars.dzen.ru^
-
-||zen.yandex.ru^
-||zen.yandex.net^
-||zen-api.yandex.^
-
-
-! =====================================================================
-! [9] EXPLICIT ALLOW — MINIMAL SURVIVAL SET
+! [8] EXPLICIT ALLOW — MINIMAL SURVIVAL SET
 ! =====================================================================
 @@||passport.yandex.ru^$important
 @@||oauth.yandex.ru^$important
