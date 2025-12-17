@@ -1,145 +1,125 @@
 ! =====================================================================
-! YANDEX DNS BLOCKLIST — FINAL
+! YANDEX DNS BLOCKLIST — HARD / AGGRESSIVE
 ! Платформа: NanoPi R5C
 ! ОС: OpenWrt / FriendlyWRT
 ! DNS: AdGuard Home
 ! Автор: Stanislav Lukin
 ! Тип: DNS-only (router-grade)
-! Назначение: Блок рекламы, RTB и трекеров Яндекса без поломки сервисов
-! Статус: FINAL / STABLE
+! Назначение: Максимальное уничтожение рекламы и трекинга Яндекса
+! Режим: AGGRESSIVE / BREAK-ZEN-ADS
 ! Обновлено: 2025-12-15
 ! =====================================================================
 
 
 ! =====================================================================
-! [1] CORE ADS / RTB (ОСНОВА)
+! [0] GLOBAL YANDEX AD ROOTS (ЖЕСТКО)
 ! =====================================================================
-||an.yandex.kz^
-||an.yandex.ru^
-||an.yandex.net^
-||an.yandex.by^
-
-||api.browser.yandex.kz^$important
-||api.browser.yandex.ru^$important
-||api.browser.yandex.net^$important
-||api.browser.yandex.by^$important
-
-||cdn.adfox.kz^$important
-||cdn.adfox.ru^$important
-||cdn.adfox.net^$important
-||cdn.adfox.by^$important
-
-||*.adfox.kz^$important
-||*.adfox.ru^$important
-||*.adfox.net^$important
-||*.adfox.by^$important
-
-||banners.adfox.kz^$important
-||banners.adfox.ru^$important
-||banners.adfox.net^$important
-||banners.adfox.by^$important
-
-||yastatic.kz^$important
-||yandex.ru^$important
-||yastatic.net^$important
-
-||yandex.ru^
-||yandex.net^
-||yandex.by^
-||yandex.com^
-
-||yabs.yandex.kz^
-||yabs.yandex.ru^
-||yabs.yandex.net^
-||yabs.yandex.by^
-
-||adfox.yandex.kz^
-||adfox.yandex.ru^
-||adfox.yandex.net^
-||adfox.yandex.by^
-||*.adfox.*^
-
-||adsdk.yandex.kz^
-||adsdk.yandex.ru^
-||adsdk.yandex.net^
-||adsdk.yandex.by^
-
+||yabs.yandex.^
+||adfox.yandex.^
+||adsdk.yandex.^
+||advertising.yandex.^
+||direct.yandex.^
 ||yandexadexchange.net^
 ||mobile.yandexadexchange.net^
-
-||advertising.yandex.kz^
-||advertising.yandex.ru^
-||advertising.yandex.net^
-||advertising.yandex.by^
-
-||direct.yandex.kz^
-||direct.yandex.ru^
-||direct.yandex.net^
-||direct.yandex.by^
-
 ||offerwall.yandex.net^
 ||awaps.yandex.net^
 
 
 ! =====================================================================
-! [2] ANALYTICS / TRACKING
+! [1] AD / RTB / BANNERS (MAX)
 ! =====================================================================
-||mc.yandex.kz^
-||mc.yandex.ru^
-||mc.yandex.net^
-||mc.yandex.by^
+||an.yandex.^
+||ads.yandex.^
+||banners.yandex.^
+||promo.yandex.^
 
-||metrika.yandex.kz^
-||metrika.yandex.ru^
-||metrika.yandex.net^
-||metrika.yandex.by^
+||adfox.^
+||*.adfox.^
+||cdn.adfox.^
 
+||rtb.yandex.^
+||ssp.yandex.^
+||dsp.yandex.^
+
+
+! =====================================================================
+! [2] ANALYTICS / TRACKING (TOTAL KILL)
+! =====================================================================
+||mc.yandex.^
+||metrika.yandex.^
 ||appmetrica.yandex.net^
 ||redirect.appmetrica.yandex.net^
 
-||clck.yandex.kz^
-||clck.yandex.ru^
-||clck.yandex.net^
-||clck.yandex.by^
+||clck.yandex.^
+||log.yandex.^
+||stats.yandex.^
+||tracking.yandex.^
 
 
 ! =====================================================================
-! [3] VIDEO / ZEN / FEED ADS (DNS LEVEL)
+! [3] ZEN / FEED / RECOMMENDATION ADS
 ! =====================================================================
-||video.yandex.kz^
-||video.yandex.ru^
-||video.yandex.net^
+||zen.yandex.^
+||zenad.yandex.^
+||zen-api.yandex.^
+||recommend.yandex.^
+||feed.yandex.^
+||personalization.yandex.^
+
+
+! =====================================================================
+! [4] VIDEO / MEDIA ADS (ЛОМАЕТ РЕКОМЕНДАЦИИ)
+! =====================================================================
+||video.yandex.^
+||video-ads.yandex.^
+||ads.video.yandex.^
 
 ||storage.mds.yandex.net/get-ads^
-
-||zen.yandex.kz^
-||zen.yandex.ru^
-||zen.yandex.net^
+||mds.yandex.net/get-ads^
 
 
 ! =====================================================================
-! [4] MAPS / NAVI / GEO ADS
+! [5] MAPS / NAVI / GEO ADS (ЖЕСТКО)
 ! =====================================================================
-||extmaps-api.maps.yandex.kz^
-||extmaps-api.maps.yandex.ru^
-||extmaps-api.maps.yandex.net^
-
-||api.route.yandex.kz^
-||api.route.yandex.ru^
-||api.route.yandex.net^
+||extmaps-api.maps.yandex.^
+||ads.maps.yandex.^
+||route-ads.yandex.^
+||api.route.yandex.^
+||geo-ads.yandex.^
 
 
 ! =====================================================================
-! [5] EXPLICIT ALLOW (КРИТИЧНО ДЛЯ РАБОТЫ)
+! [6] SDK / MOBILE / BROWSER TRACKING
 ! =====================================================================
+||api.browser.yandex.^
+||crash.yandex.^
+||diagnostic.yandex.^
+||telemetry.yandex.^
+||push-ads.yandex.^
+
+
+! =====================================================================
+! [7] CDN USED FOR ADS (АККУРАТНО)
+! =====================================================================
+||yastatic.net/ads^
+||yastatic.net/rtb^
+||yastatic.net/banner^
+||yastatic.net/metrika^
+
+
+! =====================================================================
+! [8] EXPLICIT ALLOW — MINIMAL SURVIVAL SET
+! =====================================================================
+@@||passport.yandex.ru^$important
+@@||oauth.yandex.ru^$important
+
 @@||login.yandex.*^
 @@||mail.yandex.*^
 @@||imap.yandex.com^
 @@||smtp.yandex.com^
+
 @@||disk.yandex.*^
-@@||static.yandex.net^
-@@||push.yandex.ru^
 @@||cloud-api.yandex.net^$important
-@@||passport.yandex.ru^$important
+
+@@||static.yandex.net^
 @@||yastatic.net^$important
-@@||oauth.yandex.ru^$important
