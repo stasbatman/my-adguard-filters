@@ -180,7 +180,7 @@ kinopoisk.ru##.promo
 ! ==================================================
 ! [8] РАЗРЕШЁННЫЕ СЕРВИСЫ (ПОЧТА + ДИСК)
 ! ==================================================
-@@||yandex.kz^$important
+!@@||yandex.kz^$important
 @@||mail.yandex.kz^$important
 @@||disk.yandex.kz^$important
 @@||passport.yandex.kz^$important
