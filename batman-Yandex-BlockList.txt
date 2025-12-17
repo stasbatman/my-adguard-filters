@@ -11,7 +11,7 @@
 ! ==================================================
 ! [0] ПОЛНАЯ ЖЁСТКАЯ БЛОКИРОВКА yandex.kz (ОСНОВА)
 ! ==================================================
-||yandex.kz^$important
+!||yandex.kz^$important
 ||*.yandex.kz^$important
 ||yastatic.kz^$important
 
