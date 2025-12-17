@@ -1,187 +1,212 @@
-==========================================
-! АГРЕССИВНАЯ БЛОКИРОВКА РЕКЛАМЫ ДЛЯ yandex.kz + yandex.ru/by/net
-! Формат: AdGuard (совместим с uBlock)
-! Режим: HARD / AGGRESSIVE
-! Дата обновления: 2025-12-17
+! ==========================================
+! Блокировка рекламы Яндекса — агрессивная и точная версия
+! Формат: AdGuard
+! Обновлено: 2025-07-04
 ! ==========================================
 
-
-! === [0] ЖЁСТКАЯ DNS-БЛОКИРОВКА (КОРЕНЬ) ===
-||yandex.kz^$important
+!Моя блокировка
 ||yandex.ru^$important
-||yandex.net^$important
-||yandex.by^$important
-||yastatic.kz^$important
+||yastatic.net^$important
+||yandex.ru^$important
 ||yastatic.net^$important
 
+! ==========================================
+! Блокировка рекламы Яндекса — агрессивная и точная версия
+! Формат: AdGuard
+! Обновлено: 2025-07-04
+! ==========================================
 
-! === [1] ОСНОВНЫЕ РЕКЛАМНЫЕ И RTB-ДОМЕНЫ (ВСЕ РЕГИОНЫ) ===
-||an.yandex.kz^$important
+! === 1. Основные рекламные и трекинг-домены ===
 ||an.yandex.ru^$important
 ||an.yandex.net^$important
 ||an.yandex.by^$important
-
-||yabs.yandex.kz^$important
-||yabs.yandex.ru^$important
-||yabs.yandex.net^$important
-||yabs.yandex.by^$important
-
-||adfox.yandex.kz^$important
-||adfox.yandex.ru^$important
-||adfox.yandex.net^$important
-||adfox.yandex.by^$important
-
-||adsdk.yandex.kz^$important
-||adsdk.yandex.ru^$important
-||adsdk.yandex.net^$important
-||adsdk.yandex.by^$important
-
-||advertising.yandex.kz^$important
-||advertising.yandex.ru^$important
-||advertising.yandex.net^$important
-||advertising.yandex.by^$important
-
-||direct.yandex.kz^$important
-||direct.yandex.ru^$important
-||direct.yandex.net^$important
-||direct.yandex.by^$important
-
-||yandexadexchange.kz^$important
-||yandexadexchange.net^$important
-||mobile.yandexadexchange.kz^$important
-||mobile.yandexadexchange.net^$important
-
-||offerwall.yandex.kz^$important
-||offerwall.yandex.ru^$important
-||offerwall.yandex.net^$important
-||offerwall.yandex.by^$important
-
-||awaps.yandex.net^$important
-||awaps.yandex.by^$important
-
-
-! === [2] АНАЛИТИКА / ТРЕКИНГ (TOTAL KILL) ===
-||mc.yandex.kz^$important
 ||mc.yandex.ru^$important
 ||mc.yandex.net^$important
 ||mc.yandex.by^$important
-
-||metrika.yandex.kz^$important
 ||metrika.yandex.ru^$important
 ||metrika.yandex.net^$important
 ||metrika.yandex.by^$important
-
-||appmetrica.yandex.kz^$important
-||appmetrica.yandex.net^$important
-||appmetrica.yandex.by^$important
-||redirect.appmetrica.yandex.kz^$important
-||redirect.appmetrica.yandex.com^$important
-
-||clck.yandex.kz^$important
-||clck.yandex.ru^$important
-||clck.yandex.net^$important
-||clck.yandex.by^$important
-
-
-! === [3] ADFOX / BANNERS / CDN ===
-||ads.adfox.kz^$important
+||yabs.yandex.ru^$important
+||yabs.yandex.net^$important
+||yabs.yandex.by^$important
+||adfox.yandex.ru^$important
+||adfox.yandex.net^$important
+||adfox.yandex.by^$important
+||adsdk.yandex.ru^$important
+||adsdk.yandex.net^$important
+||adsdk.yandex.by^$important
+||yandexadexchange.net^$important
 ||ads.adfox.ru^$important
 ||ads.adfox.net^$important
 ||ads.adfox.by^$important
-
-||cdn.adfox.kz^$important
-||cdn.adfox.ru^$important
-||cdn.adfox.net^$important
-||cdn.adfox.by^$important
-
-||banners.adfox.kz^$important
-||banners.adfox.ru^$important
-||banners.adfox.net^$important
-||banners.adfox.by^$important
-
-||*.adfox.kz^$important
 ||*.adfox.ru^$important
 ||*.adfox.net^$important
 ||*.adfox.by^$important
+||banners.adfox.ru^$important
+||banners.adfox.net^$important
+||banners.adfox.by^$important
+||clck.yandex.ru^$important
+||clck.yandex.net^$important
+||clck.yandex.by^$important
+||cdn.adfox.ru^$important
+||cdn.adfox.net^$important
+||cdn.adfox.by^$important
+||redirect.appmetrica.yandex.com^$important
+||appmetrica.yandex.net^$important
+||appmetrica.yandex.by^$important
+||awaps.yandex.net^$important
+||awaps.yandex.by^$important
+||advertising.yandex.ru^$important
+||advertising.yandex.net^$important
+||advertising.yandex.by^$important
+||direct.yandex.ru^$important
+||direct.yandex.net^$important
+||direct.yandex.by^$important
+||offerwall.yandex.ru^$important
+||offerwall.yandex.net^$important
+||offerwall.yandex.by^$important
+||mobile.yandex.net^$important
+||mobile.yandex.by^$important
+||mds.yandex.net^$important
+||mds.yandex.by^$important
+||avatars.mds.yandex.net^$important
+||avatars.mds.yandex.by^$important
 
-
-! === [4] VIDEO / FEED / MAPS ADS ===
-||video.yandex.kz/api/ads^$important
+! === 2. Видео-реклама и медиасерверы ===
 ||video.yandex.ru/api/ads^$important
 ||video.yandex.net/api/ads^$important
 ||video.yandex.by/api/ads^$important
-
-||video.yandex.kz/api/show_ad^$important
 ||video.yandex.ru/api/show_ad^$important
 ||video.yandex.net/api/show_ad^$important
 ||video.yandex.by/api/show_ad^$important
-
-||yandex.kz/showad^$important
 ||yandex.ru/showad^$important
 ||yandex.net/showad^$important
 ||yandex.by/showad^$important
-
-||storage.mds.yandex.kz/get-ads^$important
-||storage.mds.yandex.net/get-ads^$important
-||storage.mds.yandex.by/get-ads^$important
-
-||extmaps-api.maps.yandex.kz/ads^$important
+||yandex.ru/ads^$important
+||yandex.net/ads^$important
+||yandex.by/ads^$important
+||video-eu-*.yandex.net^$important
+||storage.mds.yandex.net/get-ads?$important
+||storage.mds.yandex.by/get-ads?$important
 ||extmaps-api.maps.yandex.net/ads^$important
 ||extmaps-api.maps.yandex.by/ads^$important
 
-
-! === [5] SDK / MOBILE / BROWSER TELEMETRY ===
-||api.browser.yandex.kz^$important
+! === 3. API Яндекс.Браузера ===
 ||api.browser.yandex.ru^$important
+||api.browser.yandex.kz^$important
 ||api.browser.yandex.net^$important
 ||api.browser.yandex.by^$important
 
-||mobile.yandex.kz^$important
-||mobile.yandex.net^$important
-||mobile.yandex.by^$important
-
-||*.edge.yandex.kz^$important
+! === 4. Редкие и будущие поддомены рекламы и CDN ===
+||ads5.adfox.ru^$important
+||ads5.adfox.net^$important
+||ads5.adfox.by^$important
+||ads6.adfox.ru^$important
+||ads6.adfox.net^$important
+||ads6.adfox.by^$important
+||ads6-rt.adfox.ru^$important
+||ads6-rt.adfox.net^$important
+||ads6-rt.adfox.by^$important
+||mobile.yandexadexchange.net^$important
+||mobile.yandexadexchange.by^$important
 ||*.edge.yandex.net^$important
 ||*.edge.yandex.by^$important
-
-||*.cdn.yandex.kz^$important
 ||*.cdn.yandex.net^$important
 ||*.cdn.yandex.by^$important
 
+! === 5. Скрипты и трекинг-пиксели ===
+||mc.yandex.ru/watch/*
+||mc.yandex.net/watch/*
+||mc.yandex.by/watch/*
+||mc.yandex.ru/metrika/*
+||mc.yandex.net/metrika/*
+||mc.yandex.by/metrika/*
+||*.yandex.ru/static/ads/*
+||*.yandex.net/static/ads/*
+||*.yandex.by/static/ads/*
 
-! === [6] CSS-БЛОКИРОВКА (SERP / DIRECT / ADFOX) ===
-yandex.kz##div[class*="banner"]
-yandex.kz##div[class*="adv"]
-yandex.kz##div[class*="promo"]
-yandex.kz##div[class*="adfox"]
-yandex.kz##div[class*="direct"]
-yandex.kz##.yabs
-yandex.kz##.direct
-yandex.kz##.promo
-yandex.kz##.adfox
-yandex.kz##.serp-item:has-text(Реклама)
-yandex.kz##.serp-item:has(.label_theme_direct)
-yandex.kz##[id^="yandex_ad"]
-yandex.kz##iframe[src*="adfox"]
+! === 6. CSS-блокировка рекламных блоков ===
+yandex.ru##div[class*="banner"]
+yandex.net##div[class*="banner"]
+yandex.by##div[class*="banner"]
+yandex.ru##div[class*="adv"]
+yandex.net##div[class*="adv"]
+yandex.by##div[class*="adv"]
+yandex.ru##div[class*="Ad"]
+yandex.net##div[class*="Ad"]
+yandex.by##div[class*="Ad"]
+yandex.ru##div[class*="yabs"]
+yandex.net##div[class*="yabs"]
+yandex.by##div[class*="yabs"]
+yandex.ru##div[class*="direct"]
+yandex.net##div[class*="direct"]
+yandex.by##div[class*="direct"]
+yandex.ru##div[data-bem*="banner"]
+yandex.net##div[data-bem*="banner"]
+yandex.by##div[data-bem*="banner"]
+yandex.ru##div[data-bem*="adv"]
+yandex.net##div[data-bem*="adv"]
+yandex.by##div[data-bem*="adv"]
+yandex.ru##.serp-item[data-fast-name="advert"]
+yandex.net##.serp-item[data-fast-name="advert"]
+yandex.by##.serp-item[data-fast-name="advert"]
+yandex.ru##.main__right > div:has(.direct)
+yandex.net##.main__right > div:has(.direct)
+yandex.by##.main__right > div:has(.direct)
+yandex.ru##.direct
+yandex.net##.direct
+yandex.by##.direct
+yandex.ru##.yabs-advanced__popup
+yandex.net##.yabs-advanced__popup
+yandex.by##.yabs-advanced__popup
+yandex.ru##.yabs-advanced__container
+yandex.net##.yabs-advanced__container
+yandex.by##.yabs-advanced__container
+yandex.ru##.promo
+yandex.net##.promo
+yandex.by##.promo
+yandex.ru##.adfox
+yandex.net##.adfox
+yandex.by##.adfox
 
+! Удаление блоков Яндекс.Директа
+yandex.ru##.organic__subtitle:has-text(Директ)
+yandex.net##.organic__subtitle:has-text(Директ)
+yandex.by##.organic__subtitle:has-text(Директ)
+yandex.ru##.organic__content:has(.label_theme_direct)
+yandex.net##.organic__content:has(.label_theme_direct)
+yandex.by##.organic__content:has(.label_theme_direct)
+yandex.ru##.serp-item:has(.label_theme_direct)
+yandex.net##.serp-item:has(.label_theme_direct)
+yandex.by##.serp-item:has(.label_theme_direct)
+yandex.ru##.serp-item:has-text(Реклама)
+yandex.net##.serp-item:has-text(Реклама)
+yandex.by##.serp-item:has-text(Реклама)
 
-! === [7] ДЗЕН / МАРКЕТ / КИНОПОИСК (ЖЁСТКО) ===
-zen.yandex.kz##.adfox
-zen.yandex.kz##.promo-label
-zen.yandex.kz##.feed__item:has(.promo)
-
-market.yandex.kz##.adfox
-market.yandex.kz##.promo
-market.yandex.kz##div[class*="banner"]
-
+! Кинопоиск, Дзен, Маркет
+zen.yandex.ru##.adfox-banner
+zen.yandex.net##.adfox-banner
+zen.yandex.by##.adfox-banner
+zen.yandex.ru##.feed__item:has(.promo-label)
+zen.yandex.net##.feed__item:has(.promo-label)
+zen.yandex.by##.feed__item:has(.promo-label)
+zen.yandex.ru##.promo-label
+zen.yandex.net##.promo-label
+zen.yandex.by##.promo-label
+zen.yandex.ru##.infinite-scroll__item:has(.adfox)
+zen.yandex.net##.infinite-scroll__item:has(.adfox)
+zen.yandex.by##.infinite-scroll__item:has(.adfox)
 kinopoisk.ru##.ad-banner
-kinopoisk.ru##.promo
+market.yandex.ru##div[class*="banner"]
+market.yandex.net##div[class*="banner"]
+market.yandex.by##div[class*="banner"]
+market.yandex.ru##div[class*="advert"]
+market.yandex.net##div[class*="advert"]
+market.yandex.by##div[class*="advert"]
 
-
-! === [8] РАЗРЕШЁННЫЕ СЕРВИСЫ (MINIMUM SURVIVAL) ===
-@@||passport.yandex.kz^$important
-@@||oauth.yandex.ru^$important
-@@||mail.yandex.kz^
-@@||disk.yandex.kz^
-@@||static.yandex.net^
-@@||favicon.yandex.kz/favicon.ico
+! === 7. Что НЕ блокируется для нормальной работы Почты и Диска ===
+! favicon.yandex.net — фавиконки
+! storage.mds.yandex.net — медиа без рекламы
+! mail.yandex.ru, mail.yandex.net, mail.yandex.by — разрешены
+! disk.yandex.ru, disk.yandex.net, disk.yandex.by — разрешены
+! НЕ блокировать yandex.ru, yandex.net, yandex.by целиком!
