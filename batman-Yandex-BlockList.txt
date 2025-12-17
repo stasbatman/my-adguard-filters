@@ -1,166 +1,187 @@
-! =====================================================================
-! YANDEX DNS BLOCKLIST — HARD / AGGRESSIVE + DZEN TOTAL
-! Платформа: NanoPi R5C
-! ОС: OpenWrt / FriendlyWRT
-! DNS: AdGuard Home
-! Автор: Stanislav Lukin
-! Тип: DNS-only (router-grade)
-! Назначение: Максимально жесткая фильтрация Яндекса + полный выпил Dzen
-! Статус: HARD / AGGRESSIVE
-! Обновлено: 2025-12-17
-! =====================================================================
+==========================================
+! АГРЕССИВНАЯ БЛОКИРОВКА РЕКЛАМЫ ДЛЯ yandex.kz + yandex.ru/by/net
+! Формат: AdGuard (совместим с uBlock)
+! Режим: HARD / AGGRESSIVE
+! Дата обновления: 2025-12-17
+! ==========================================
 
 
-! =====================================================================
-! [0] GLOBAL AD / RTB ROOTS (ЖЕСТКО)
-! =====================================================================
-||an.yandex.^
-||yabs.yandex.^
-||adfox.yandex.^
-||adsdk.yandex.^
-||advertising.yandex.^
-||direct.yandex.^
-
-||yandexadexchange.net^
-||mobile.yandexadexchange.net^
-||offerwall.yandex.net^
-||awaps.yandex.net^
+! === [0] ЖЁСТКАЯ DNS-БЛОКИРОВКА (КОРЕНЬ) ===
+||yandex.kz^$important
+||yandex.ru^$important
+||yandex.net^$important
+||yandex.by^$important
+||yastatic.kz^$important
+||yastatic.net^$important
 
 
-! =====================================================================
-! [1] AD / RTB / BANNERS (MAX)
-! =====================================================================
-||ads.yandex.^
-||banners.yandex.^
-||promo.yandex.^
+! === [1] ОСНОВНЫЕ РЕКЛАМНЫЕ И RTB-ДОМЕНЫ (ВСЕ РЕГИОНЫ) ===
+||an.yandex.kz^$important
+||an.yandex.ru^$important
+||an.yandex.net^$important
+||an.yandex.by^$important
 
-||adfox.^
-||*.adfox.^
-||cdn.adfox.^
+||yabs.yandex.kz^$important
+||yabs.yandex.ru^$important
+||yabs.yandex.net^$important
+||yabs.yandex.by^$important
 
-||rtb.yandex.^
-||ssp.yandex.^
-||dsp.yandex.^
+||adfox.yandex.kz^$important
+||adfox.yandex.ru^$important
+||adfox.yandex.net^$important
+||adfox.yandex.by^$important
 
+||adsdk.yandex.kz^$important
+||adsdk.yandex.ru^$important
+||adsdk.yandex.net^$important
+||adsdk.yandex.by^$important
 
-! =====================================================================
-! [2] ANALYTICS / TRACKING (TOTAL KILL)
-! =====================================================================
-||mc.yandex.^
-||metrika.yandex.^
+||advertising.yandex.kz^$important
+||advertising.yandex.ru^$important
+||advertising.yandex.net^$important
+||advertising.yandex.by^$important
 
-||appmetrica.yandex.net^
-||redirect.appmetrica.yandex.net^
+||direct.yandex.kz^$important
+||direct.yandex.ru^$important
+||direct.yandex.net^$important
+||direct.yandex.by^$important
 
-||clck.yandex.^
-||log.yandex.^
-||stats.yandex.^
-||tracking.yandex.^
+||yandexadexchange.kz^$important
+||yandexadexchange.net^$important
+||mobile.yandexadexchange.kz^$important
+||mobile.yandexadexchange.net^$important
 
+||offerwall.yandex.kz^$important
+||offerwall.yandex.ru^$important
+||offerwall.yandex.net^$important
+||offerwall.yandex.by^$important
 
-! =====================================================================
-! [3] DZEN / ZEN — TOTAL BLOCK (ru / net / com / by)
-! =====================================================================
-||dzen.ru^
-||dzen.net^
-||dzen.com^
-||dzen.by^
-
-||www.dzen.ru^
-||www.dzen.net^
-||www.dzen.com^
-||www.dzen.by^
-
-||api.dzen.ru^
-||api.dzen.net^
-||api.dzen.com^
-||api.dzen.by^
-
-||static.dzen.ru^
-||static.dzen.net^
-||static.dzen.com^
-||static.dzen.by^
-
-||cdn.dzen.ru^
-||cdn.dzen.net^
-||cdn.dzen.com^
-||cdn.dzen.by^
-
-||img.dzen.ru^
-||img.dzen.net^
-||img.dzen.com^
-||img.dzen.by^
-
-||avatars.dzen.ru^
-||avatars.dzen.net^
-||avatars.dzen.com^
-||avatars.dzen.by^
-
-||zen.yandex.ru^
-||zen.yandex.net^
-||zen.yandex.com^
-||zen.yandex.by^
-
-||zen-api.yandex.ru^
-||zen-api.yandex.net^
-||zen-api.yandex.com^
-||zen-api.yandex.by^
+||awaps.yandex.net^$important
+||awaps.yandex.by^$important
 
 
-! =====================================================================
-! [4] VIDEO / MEDIA ADS
-! =====================================================================
-||video.yandex.^
-||video-ads.yandex.^
-||ads.video.yandex.^
+! === [2] АНАЛИТИКА / ТРЕКИНГ (TOTAL KILL) ===
+||mc.yandex.kz^$important
+||mc.yandex.ru^$important
+||mc.yandex.net^$important
+||mc.yandex.by^$important
 
-||storage.mds.yandex.net/get-ads^
-||mds.yandex.net/get-ads^
+||metrika.yandex.kz^$important
+||metrika.yandex.ru^$important
+||metrika.yandex.net^$important
+||metrika.yandex.by^$important
 
+||appmetrica.yandex.kz^$important
+||appmetrica.yandex.net^$important
+||appmetrica.yandex.by^$important
+||redirect.appmetrica.yandex.kz^$important
+||redirect.appmetrica.yandex.com^$important
 
-! =====================================================================
-! [5] MAPS / NAVI / GEO ADS
-! =====================================================================
-||extmaps-api.maps.yandex.^
-||ads.maps.yandex.^
-||route-ads.yandex.^
-||api.route.yandex.^
-||geo-ads.yandex.^
-
-
-! =====================================================================
-! [6] SDK / MOBILE / BROWSER / TELEMETRY
-! =====================================================================
-||api.browser.yandex.^
-||crash.yandex.^
-||diagnostic.yandex.^
-||telemetry.yandex.^
-||push-ads.yandex.^
-||push.yandex.ru^
+||clck.yandex.kz^$important
+||clck.yandex.ru^$important
+||clck.yandex.net^$important
+||clck.yandex.by^$important
 
 
-! =====================================================================
-! [7] CDN / STATIC USED FOR ADS & TRACKING
-! =====================================================================
-||yastatic.net/ads^
-||yastatic.net/rtb^
-||yastatic.net/banner^
-||yastatic.net/metrika^
+! === [3] ADFOX / BANNERS / CDN ===
+||ads.adfox.kz^$important
+||ads.adfox.ru^$important
+||ads.adfox.net^$important
+||ads.adfox.by^$important
+
+||cdn.adfox.kz^$important
+||cdn.adfox.ru^$important
+||cdn.adfox.net^$important
+||cdn.adfox.by^$important
+
+||banners.adfox.kz^$important
+||banners.adfox.ru^$important
+||banners.adfox.net^$important
+||banners.adfox.by^$important
+
+||*.adfox.kz^$important
+||*.adfox.ru^$important
+||*.adfox.net^$important
+||*.adfox.by^$important
 
 
-! =====================================================================
-! [8] EXPLICIT ALLOW — MINIMAL SURVIVAL SET
-! =====================================================================
-@@||passport.yandex.ru^$important
+! === [4] VIDEO / FEED / MAPS ADS ===
+||video.yandex.kz/api/ads^$important
+||video.yandex.ru/api/ads^$important
+||video.yandex.net/api/ads^$important
+||video.yandex.by/api/ads^$important
+
+||video.yandex.kz/api/show_ad^$important
+||video.yandex.ru/api/show_ad^$important
+||video.yandex.net/api/show_ad^$important
+||video.yandex.by/api/show_ad^$important
+
+||yandex.kz/showad^$important
+||yandex.ru/showad^$important
+||yandex.net/showad^$important
+||yandex.by/showad^$important
+
+||storage.mds.yandex.kz/get-ads^$important
+||storage.mds.yandex.net/get-ads^$important
+||storage.mds.yandex.by/get-ads^$important
+
+||extmaps-api.maps.yandex.kz/ads^$important
+||extmaps-api.maps.yandex.net/ads^$important
+||extmaps-api.maps.yandex.by/ads^$important
+
+
+! === [5] SDK / MOBILE / BROWSER TELEMETRY ===
+||api.browser.yandex.kz^$important
+||api.browser.yandex.ru^$important
+||api.browser.yandex.net^$important
+||api.browser.yandex.by^$important
+
+||mobile.yandex.kz^$important
+||mobile.yandex.net^$important
+||mobile.yandex.by^$important
+
+||*.edge.yandex.kz^$important
+||*.edge.yandex.net^$important
+||*.edge.yandex.by^$important
+
+||*.cdn.yandex.kz^$important
+||*.cdn.yandex.net^$important
+||*.cdn.yandex.by^$important
+
+
+! === [6] CSS-БЛОКИРОВКА (SERP / DIRECT / ADFOX) ===
+yandex.kz##div[class*="banner"]
+yandex.kz##div[class*="adv"]
+yandex.kz##div[class*="promo"]
+yandex.kz##div[class*="adfox"]
+yandex.kz##div[class*="direct"]
+yandex.kz##.yabs
+yandex.kz##.direct
+yandex.kz##.promo
+yandex.kz##.adfox
+yandex.kz##.serp-item:has-text(Реклама)
+yandex.kz##.serp-item:has(.label_theme_direct)
+yandex.kz##[id^="yandex_ad"]
+yandex.kz##iframe[src*="adfox"]
+
+
+! === [7] ДЗЕН / МАРКЕТ / КИНОПОИСК (ЖЁСТКО) ===
+zen.yandex.kz##.adfox
+zen.yandex.kz##.promo-label
+zen.yandex.kz##.feed__item:has(.promo)
+
+market.yandex.kz##.adfox
+market.yandex.kz##.promo
+market.yandex.kz##div[class*="banner"]
+
+kinopoisk.ru##.ad-banner
+kinopoisk.ru##.promo
+
+
+! === [8] РАЗРЕШЁННЫЕ СЕРВИСЫ (MINIMUM SURVIVAL) ===
+@@||passport.yandex.kz^$important
 @@||oauth.yandex.ru^$important
-
-@@||login.yandex.*^
-@@||mail.yandex.*^
-@@||imap.yandex.com^
-@@||smtp.yandex.com^
-
-@@||disk.yandex.*^
-@@||cloud-api.yandex.net^$important
-
+@@||mail.yandex.kz^
+@@||disk.yandex.kz^
 @@||static.yandex.net^
-@@||yastatic.net^$important
+@@||favicon.yandex.kz/favicon.ico
