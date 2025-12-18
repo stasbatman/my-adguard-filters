@@ -1,7 +1,7 @@
 ==========================================
-! FULL HARD BLOCK: yandex.kz
-! + Агрессивная блокировка рекламы Yandex (kz/ru/by/net)
-! Исключения: Mail + Disk
+! YANDEX HARD BLOCK (RU / KZ / BY / NET)
+! Агрессивная блокировка рекламы и трекинга
+! Исключения: Mail / Disk / Music (HTML only)
 ! Формат: AdGuard / AdGuard Home / uBlock
 ! Режим: HARD
 ! Дата: 2025-12-17
@@ -9,181 +9,118 @@
 
 
 ! ==================================================
-! [0] ПОЛНАЯ ЖЁСТКАЯ БЛОКИРОВКА yandex.kz (ОСНОВА)
+! [A] РАЗРЕШЁННЫЕ САЙТЫ (ТОЛЬКО HTML-ДОКУМЕНТЫ)
+! Разрешает открытие страниц, но НЕ рекламу
 ! ==================================================
-||yandex.kz^$important
-||*.yandex.kz^$important
-||yastatic.kz^$important
+@@||yandex.ru^$document
+@@||yandex.kz^$document
+
+@@||mail.yandex.ru^$document
+@@||mail.yandex.kz^$document
+@@||mail.yandex.com^$document
+
+@@||disk.yandex.ru^$document
+@@||disk.yandex.kz^$document
+@@||disk.yandex.com^$document
+
+@@||music.yandex.ru^$document
+@@||music.yandex.com^$document
+
+@@||passport.yandex.*^$document
+@@||oauth.yandex.*^$document
 
 
 ! ==================================================
-! [1] БЛОК ОБХОДОВ / РЕДИРЕКТОВ / КЛИК-ТРЕКИНГА
+! [B] API И СЕРВИСНЫЕ ДОМЕНЫ (ДЛЯ РАБОТЫ СЕРВИСОВ)
 ! ==================================================
-||redirect.yandex.kz^$important
-||clck.yandex.kz^$important
+@@||api.disk.yandex.*^
+@@||cloud-api.yandex.*^
+@@||api.music.yandex.*^
+
+@@||imap.yandex.com^
+@@||smtp.yandex.com^
+@@||static.yandex.net^
+@@||favicon.yandex.kz/favicon.ico
 
 
 ! ==================================================
-! [2] ГЛОБАЛЬНЫЕ РЕКЛАМНЫЕ И RTB-ДОМЕНЫ (ВСЕ РЕГИОНЫ)
+! [C] ПОЛНАЯ БЛОКИРОВКА РЕКЛАМЫ / RTB / DSP
 ! ==================================================
-||an.yandex.kz^$important
-||an.yandex.ru^$important
-||an.yandex.net^$important
-||an.yandex.by^$important
+||an.yandex.*^$important
+||yabs.yandex.*^$important
+||direct.yandex.*^$important
+||adfox.yandex.*^$important
+||ads.yandex.*^$important
+||adsdk.yandex.*^$important
+||advertising.yandex.*^$important
+||offerwall.yandex.*^$important
 
-||yabs.yandex.kz^$important
-||yabs.yandex.ru^$important
-||yabs.yandex.net^$important
-||yabs.yandex.by^$important
-
-||adfox.yandex.kz^$important
-||adfox.yandex.ru^$important
-||adfox.yandex.net^$important
-||adfox.yandex.by^$important
-||*.adfox.kz^$important
-||*.adfox.ru^$important
-||*.adfox.net^$important
-||*.adfox.by^$important
-
-||adsdk.yandex.kz^$important
-||adsdk.yandex.ru^$important
-||adsdk.yandex.net^$important
-||adsdk.yandex.by^$important
-
-||advertising.yandex.kz^$important
-||advertising.yandex.ru^$important
-||advertising.yandex.net^$important
-||advertising.yandex.by^$important
-
-||direct.yandex.kz^$important
-||direct.yandex.ru^$important
-||direct.yandex.net^$important
-||direct.yandex.by^$important
-
-||yandexadexchange.kz^$important
 ||yandexadexchange.net^$important
-||mobile.yandexadexchange.kz^$important
 ||mobile.yandexadexchange.net^$important
-
-||offerwall.yandex.kz^$important
-||offerwall.yandex.ru^$important
-||offerwall.yandex.net^$important
-||offerwall.yandex.by^$important
-
 ||awaps.yandex.net^$important
-||awaps.yandex.by^$important
+||advgazeta.ru^$important
 
 
 ! ==================================================
-! [3] АНАЛИТИКА / МЕТРИКА / APPMETRICA (TOTAL KILL)
+! [D] АНАЛИТИКА / МЕТРИКА / APPMETRICA (TOTAL KILL)
 ! ==================================================
-||mc.yandex.kz^$important
-||mc.yandex.ru^$important
-||mc.yandex.net^$important
-||mc.yandex.by^$important
-
-||metrika.yandex.kz^$important
-||metrika.yandex.ru^$important
-||metrika.yandex.net^$important
-||metrika.yandex.by^$important
-
-||appmetrica.yandex.kz^$important
-||appmetrica.yandex.net^$important
-||appmetrica.yandex.by^$important
+||mc.yandex.*^$important
+||metrika.yandex.*^$important
+||appmetrica.yandex.*^$important
 ||redirect.appmetrica.yandex.com^$important
 
 
 ! ==================================================
-! [4] VIDEO / FEED / MAPS ADS
+! [E] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ / CAPTCHA
 ! ==================================================
-||video.yandex.kz/api/ads^$important
-||video.yandex.ru/api/ads^$important
-||video.yandex.net/api/ads^$important
-||video.yandex.by/api/ads^$important
-
-||video.yandex.kz/api/show_ad^$important
-||video.yandex.ru/api/show_ad^$important
-||video.yandex.net/api/show_ad^$important
-||video.yandex.by/api/show_ad^$important
-
-||yandex.kz/showad^$important
-||yandex.ru/showad^$important
-||yandex.net/showad^$important
-||yandex.by/showad^$important
-
-||storage.mds.yandex.kz/get-ads^$important
-||storage.mds.yandex.net/get-ads^$important
-||storage.mds.yandex.by/get-ads^$important
-
-||extmaps-api.maps.yandex.kz/ads^$important
-||extmaps-api.maps.yandex.net/ads^$important
-||extmaps-api.maps.yandex.by/ads^$important
+||clck.yandex.*^$important
+||redirect.yandex.*^$important
+||yandex.ru/showcaptcha^
 
 
 ! ==================================================
-! [5] SDK / MOBILE / BROWSER / CDN TRACKING
+! [F] ВИДЕО / КАРТЫ / FEED ADS
 ! ==================================================
-||api.browser.yandex.kz^$important
-||api.browser.yandex.ru^$important
-||api.browser.yandex.net^$important
-||api.browser.yandex.by^$important
-
-||mobile.yandex.kz^$important
-||mobile.yandex.net^$important
-||mobile.yandex.by^$important
-
-||*.edge.yandex.kz^$important
-||*.edge.yandex.net^$important
-||*.edge.yandex.by^$important
-
-||*.cdn.yandex.kz^$important
-||*.cdn.yandex.net^$important
-||*.cdn.yandex.by^$important
-
-||yastatic.net^$important
+||video.yandex.*/api/*ad*^$important
+||storage.mds.yandex.*/get-ads^$important
+||extmaps-api.maps.yandex.*/ads^$important
 
 
 ! ==================================================
-! [6] CSS-БЛОКИРОВКА РЕКЛАМЫ (SERP / DIRECT / ADFOX)
+! [G] CDN / BROWSER / TRACKING
 ! ==================================================
-yandex.kz##div[class*="banner"]
-yandex.kz##div[class*="adv"]
-yandex.kz##div[class*="promo"]
-yandex.kz##div[class*="adfox"]
-yandex.kz##div[class*="direct"]
-yandex.kz##.yabs
-yandex.kz##.direct
-yandex.kz##.promo
-yandex.kz##.adfox
-yandex.kz##.serp-item:has-text(Реклама)
-yandex.kz##.serp-item:has(.label_theme_direct)
-yandex.kz##[id^="yandex_ad"]
-yandex.kz##[id^="adfox"]
-yandex.kz##iframe[src*="adfox"]
+||api.browser.yandex.*^$important
+||*.edge.yandex.*^$important
+||*.cdn.yandex.*^$important
+
+||yastatic.net/ads^$important
+||yastatic.net/s3/adfox^$important
+||yastatic.net/s3/adv-*$important
 
 
 ! ==================================================
-! [7] ДЗЕН / МАРКЕТ / КИНОПОИСК
+! [H] КОСМЕТИЧЕСКИЕ ПРАВИЛА (БРАУЗЕР)
 ! ==================================================
-zen.yandex.kz##.adfox
-zen.yandex.kz##.promo-label
-zen.yandex.kz##.feed__item:has(.promo)
+yandex.ru##.serp-item:has-text(Реклама)
+yandex.ru##.serp-item:has(.label_theme_direct)
+yandex.ru##[data-zone="direct"]
+yandex.ru##.yabs
+yandex.ru##.adfox
+yandex.ru##.promo
+yandex.ru##.distribution-panel
+yandex.ru##.content__right
 
-market.yandex.kz##.adfox
-market.yandex.kz##.promo
-market.yandex.kz##div[class*="banner"]
+
+! ==================================================
+! [I] ДЗЕН / МАРКЕТ / КИНОПОИСК
+! ==================================================
+zen.yandex.*##.adfox
+zen.yandex.*##.promo
+zen.yandex.*##.feed__item:has(.promo)
+
+market.yandex.*##.adfox
+market.yandex.*##.promo
+market.yandex.*##div[class*="banner"]
 
 kinopoisk.ru##.ad-banner
 kinopoisk.ru##.promo
-
-
-! ==================================================
-! [8] РАЗРЕШЁННЫЕ СЕРВИСЫ (ПОЧТА + ДИСК)
-! ==================================================
-@@||mail.yandex.kz^$important
-@@||disk.yandex.kz^$important
-@@||passport.yandex.kz^$important
-@@||imap.yandex.com^$important
-@@||smtp.yandex.com^$important
-@@||static.yandex.net^$important
-@@||favicon.yandex.kz/favicon.ico
