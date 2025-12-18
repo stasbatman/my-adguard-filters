@@ -1,17 +1,18 @@
 ==========================================
-! YANDEX HARD BLOCK (RU / KZ / BY / NET)
-! Агрессивная блокировка рекламы и трекинга
-! Исключения: Mail / Disk / Music (HTML only)
+! YANDEX MAX HARD
+! Оставлено: Search / Mail / Disk / Music
+! Всё остальное: TOTAL BLOCK
 ! Формат: AdGuard / AdGuard Home / uBlock
-! Режим: HARD
+! Режим: MAX HARD
 ! Дата: 2025-12-17
 ==========================================
 
 
 ! ==================================================
-! [A] РАЗРЕШЁННЫЕ САЙТЫ (ТОЛЬКО HTML-ДОКУМЕНТЫ)
-! Разрешает открытие страниц, но НЕ рекламу
+! [A] РАЗРЕШЕНИЯ — ТОЛЬКО HTML СТРАНИЦЫ
+! (без рекламы, скриптов, метрики)
 ! ==================================================
+
 @@||yandex.ru^$document
 @@||yandex.kz^$document
 
@@ -31,21 +32,44 @@
 
 
 ! ==================================================
-! [B] API И СЕРВИСНЫЕ ДОМЕНЫ (ДЛЯ РАБОТЫ СЕРВИСОВ)
+! [B] API — МИНИМУМ ДЛЯ РАБОТЫ СЕРВИСОВ
 ! ==================================================
+
 @@||api.disk.yandex.*^
 @@||cloud-api.yandex.*^
+
 @@||api.music.yandex.*^
 
 @@||imap.yandex.com^
 @@||smtp.yandex.com^
+
 @@||static.yandex.net^
-@@||favicon.yandex.kz/favicon.ico
+@@||favicon.yandex.*^
 
 
 ! ==================================================
-! [C] ПОЛНАЯ БЛОКИРОВКА РЕКЛАМЫ / RTB / DSP
+! [C] ПОЛНАЯ ЖЁСТКАЯ БЛОКИРОВКА ВСЕХ YANDEX-ДОМЕНОВ
+! (кроме разрешённых выше)
 ! ==================================================
+
+||yandex.ru^$important
+||yandex.kz^$important
+||yandex.by^$important
+||yandex.net^$important
+
+||*.yandex.ru^$important
+||*.yandex.kz^$important
+||*.yandex.by^$important
+||*.yandex.net^$important
+
+||yastatic.net^$important
+||yastatic.kz^$important
+
+
+! ==================================================
+! [D] РЕКЛАМА / RTB / DSP — TOTAL KILL
+! ==================================================
+
 ||an.yandex.*^$important
 ||yabs.yandex.*^$important
 ||direct.yandex.*^$important
@@ -62,8 +86,9 @@
 
 
 ! ==================================================
-! [D] АНАЛИТИКА / МЕТРИКА / APPMETRICA (TOTAL KILL)
+! [E] АНАЛИТИКА / МЕТРИКА / APPMETRICA — В НОЛЬ
 ! ==================================================
+
 ||mc.yandex.*^$important
 ||metrika.yandex.*^$important
 ||appmetrica.yandex.*^$important
@@ -71,36 +96,61 @@
 
 
 ! ==================================================
-! [E] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ / CAPTCHA
+! [F] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ / CAPTCHA
 ! ==================================================
+
 ||clck.yandex.*^$important
 ||redirect.yandex.*^$important
 ||yandex.ru/showcaptcha^
 
 
 ! ==================================================
-! [F] ВИДЕО / КАРТЫ / FEED ADS
+! [G] VIDEO / MAPS / FEED / MEDIA ADS
 ! ==================================================
+
 ||video.yandex.*/api/*ad*^$important
+||video.yandex.*^$important
+
 ||storage.mds.yandex.*/get-ads^$important
 ||extmaps-api.maps.yandex.*/ads^$important
 
 
 ! ==================================================
-! [G] CDN / BROWSER / TRACKING
+! [H] SDK / MOBILE / BROWSER / CDN TRACKING
 ! ==================================================
+
 ||api.browser.yandex.*^$important
+||mobile.yandex.*^$important
+
 ||*.edge.yandex.*^$important
 ||*.cdn.yandex.*^$important
 
-||yastatic.net/ads^$important
-||yastatic.net/s3/adfox^$important
-||yastatic.net/s3/adv-*$important
+
+! ==================================================
+! [I] ОТКЛЮЧЕНИЕ ВСЕГО КОНТЕНТА-КРОМЕ НУЖНОГО
+! ==================================================
+
+||zen.yandex.*^$important
+||dzen.ru^$important
+
+||market.yandex.*^$important
+||pokupki.market.yandex.*^$important
+
+||kinopoisk.ru^$important
+||afisha.yandex.*^$important
+
+||news.yandex.*^$important
+||realty.yandex.*^$important
+||travel.yandex.*^$important
+||auto.yandex.*^$important
+||eda.yandex.*^$important
+||plus.yandex.*^$important
 
 
 ! ==================================================
-! [H] КОСМЕТИЧЕСКИЕ ПРАВИЛА (БРАУЗЕР)
+! [J] КОСМЕТИКА (ПОИСК БЕЗ СЛЕДОВ РЕКЛАМЫ)
 ! ==================================================
+
 yandex.ru##.serp-item:has-text(Реклама)
 yandex.ru##.serp-item:has(.label_theme_direct)
 yandex.ru##[data-zone="direct"]
@@ -109,18 +159,3 @@ yandex.ru##.adfox
 yandex.ru##.promo
 yandex.ru##.distribution-panel
 yandex.ru##.content__right
-
-
-! ==================================================
-! [I] ДЗЕН / МАРКЕТ / КИНОПОИСК
-! ==================================================
-zen.yandex.*##.adfox
-zen.yandex.*##.promo
-zen.yandex.*##.feed__item:has(.promo)
-
-market.yandex.*##.adfox
-market.yandex.*##.promo
-market.yandex.*##div[class*="banner"]
-
-kinopoisk.ru##.ad-banner
-kinopoisk.ru##.promo
