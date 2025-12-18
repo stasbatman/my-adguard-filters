@@ -23,6 +23,7 @@
 @@||disk.yandex.ru^$document
 @@||disk.yandex.kz^$document
 @@||disk.yandex.com^$document
+@@||cloud-api.yandex.net^$important
 
 @@||music.yandex.ru^$document
 @@||music.yandex.com^$document
