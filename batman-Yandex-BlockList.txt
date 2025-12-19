@@ -30,6 +30,7 @@
 
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
+@@||avatars.mds.yandex.net^$important
 
 
 ! ==================================================
