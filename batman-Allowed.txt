@@ -17,4 +17,6 @@
 @@||a.wb.ru^
 @@||banners-bt.wildberries.ru^
 @@||st.aliexpress.ru^
+@@||hls.live-video.net^$important
+
 
