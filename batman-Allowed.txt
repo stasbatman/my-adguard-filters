@@ -18,5 +18,6 @@
 @@||banners-bt.wildberries.ru^
 @@||st.aliexpress.ru^
 @@||hls.live-video.net^$important
+@@||a.nel.cloudflare.com^$important
 
 
