@@ -32,6 +32,8 @@
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
 @@||avatars.mds.yandex.net^$important
+@@||strm.yandex.net^$important
+
 
 
 ! ==================================================
@@ -58,12 +60,11 @@
 ||yandex.ru^$important
 ||yandex.kz^$important
 ||yandex.by^$important
-||yandex.net^$important
 
 ||*.yandex.ru^$important
 ||*.yandex.kz^$important
 ||*.yandex.by^$important
-||*.yandex.net^$important
+
 
 ||yastatic.net^$important
 ||yastatic.kz^$important
