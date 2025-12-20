@@ -27,6 +27,7 @@
 
 @@||music.yandex.ru^$document
 @@||music.yandex.com^$document
+@@||api.music.yandex.net^$important
 
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
