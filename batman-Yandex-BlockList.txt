@@ -33,6 +33,8 @@
 @@||oauth.yandex.*^$document
 @@||avatars.mds.yandex.net^$important
 @@||strm.yandex.net^$important
+@@||yandex.kz/search/*^$xhr,important
+
 
 
 ! ==================================================
