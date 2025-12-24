@@ -58,7 +58,7 @@
 ! ==================================================
 
 ||yandex.ru^$important
-||yandex.kz^$important
+||yandex.kz^
 ||yandex.by^$important
 
 ||*.yandex.ru^$important
