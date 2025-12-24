@@ -39,7 +39,7 @@
 ! ===== ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX =====
 
 !||yandex.kz^$important
-||*.yandex.kz^$important
+!||*.yandex.kz^$important
 ||yandex.ru^$important
 ||*.yandex.ru^$important
 ||yandex.by^$important
