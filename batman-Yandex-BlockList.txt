@@ -1,43 +1,42 @@
 ==========================================
-! YANDEX MAX HARD (KZ SEARCH ONLY — FIXED)
+! YANDEX MAX HARD (KZ SEARCH ONLY)
 ! Оставлено: Search (KZ) / Mail / Disk / Music
 ! Всё остальное: TOTAL BLOCK
 ! Формат: AdGuard / AdGuard Home / uBlock
-! ==========================================
-
+! Дата: 2025-12-24
+==========================================
 
 ! ==================================================
-! [A] РАЗРЕШЕНИЯ — HTML (ТОЛЬКО СТРАНИЦЫ)
+! [A] РАЗРЕШЕНИЯ — ТОЛЬКО HTML
 ! ==================================================
-
 @@||yandex.kz^$document,important
+@@||yandex.ru^$document
+
 @@||yandex.kz/search^$document,important
 @@||yandex.kz/images/search^$document,important
 
-@@||mail.yandex.kz^$document
 @@||mail.yandex.ru^$document
+@@||mail.yandex.kz^$document
 @@||mail.yandex.com^$document
 
-@@||disk.yandex.kz^$document
 @@||disk.yandex.ru^$document
+@@||disk.yandex.kz^$document
 @@||disk.yandex.com^$document
+@@||cloud-api.yandex.net^$important
 
 @@||music.yandex.ru^$document
 @@||music.yandex.com^$document
+@@||api.music.yandex.net^$important
 
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
-
+@@||avatars.mds.yandex.net^$important
+@@||strm.yandex.net^$important
+@@||yandex.kz/search/*^$xhr,important
 
 ! ==================================================
 ! [B] API — МИНИМУМ ДЛЯ ПОИСКА И СЕРВИСОВ
 ! ==================================================
-
-@@||yandex.kz/search^$xhr,important
-@@||yandex.kz/search/*^$xhr,important
-@@||yandex.kz/search/result^$important
-@@||yandex.kz/search/xml^$important
-
 @@||suggest.yandex.kz^$important
 @@||yandex.kz/suggest^$important
 
@@ -49,35 +48,27 @@
 @@||imap.yandex.com^
 @@||smtp.yandex.com^
 
-
-! ==================================================
-! [C] СТАТИКА (CSS / JS) — ТОЛЬКО ДЛЯ РЕНДЕРА
-! ==================================================
-
-@@||yastatic.net^$important
-@@||yastatic.kz^$important
-@@||static.yandex.net^$important
-@@||avatars.mds.yandex.net^$important
+@@||static.yandex.net^
 @@||favicon.yandex.*^
 
-
 ! ==================================================
-! [D] ПОЛНАЯ БЛОКИРОВКА ВСЕГО YANDEX (КРОМЕ РАЗРЕШЁННОГО)
+! [C] ПОЛНАЯ ЖЁСТКАЯ БЛОКИРОВКА YANDEX (KZ / RU / BY)
 ! ==================================================
-
+||yandex.kz^$important
 ||*.yandex.kz^$important
+
+||yandex.ru^$important
 ||*.yandex.ru^$important
+
+||yandex.by^$important
 ||*.yandex.by^$important
 
-||yandex.kz^$important
-||yandex.ru^$important
-||yandex.by^$important
-
+||yastatic.net^$important
+||yastatic.kz^$important
 
 ! ==================================================
-! [E] РЕКЛАМА / RTB / DSP — TOTAL KILL
+! [D] РЕКЛАМА / RTB / DSP — TOTAL KILL
 ! ==================================================
-
 ||an.yandex.*^$important
 ||yabs.yandex.*^$important
 ||direct.yandex.*^$important
@@ -92,50 +83,39 @@
 ||awaps.yandex.net^$important
 ||advgazeta.ru^$important
 
-
 ! ==================================================
-! [F] АНАЛИТИКА / МЕТРИКА / APPMETRICA — 0
+! [E] АНАЛИТИКА / МЕТРИКА / APPMETRICA — 0
 ! ==================================================
-
 ||mc.yandex.*^$important
 ||metrika.yandex.*^$important
 ||appmetrica.yandex.*^$important
 ||redirect.appmetrica.yandex.com^$important
 
-
 ! ==================================================
-! [G] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ / CAPTCHA
+! [F] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ / CAPTCHA
 ! ==================================================
-
 ||clck.yandex.*^$important
 ||redirect.yandex.*^$important
 ||yandex.kz/showcaptcha^
 
-
 ! ==================================================
-! [H] VIDEO / MAPS / FEED — ВЫКЛ
+! [G] VIDEO / MAPS / FEED — ВЫКЛ
 ! ==================================================
-
 ||video.yandex.*^$important
 ||storage.mds.yandex.*/get-ads^$important
 ||extmaps-api.maps.yandex.*/ads^$important
 
-
 ! ==================================================
-! [I] SDK / MOBILE / EDGE / CDN TRACKING
+! [H] SDK / MOBILE / CDN TRACKING
 ! ==================================================
-
 ||api.browser.yandex.*^$important
 ||mobile.yandex.*^$important
-
 ||*.edge.yandex.*^$important
-@@||*.edge.yandex.*^$xhr,important
-
+||*.cdn.yandex.*^$important
 
 ! ==================================================
-! [J] УБИТЬ ВСЕ СЕРВИСЫ
+! [I] ОТКЛЮЧЕНИЕ ВСЕГО ЛИШНЕГО
 ! ==================================================
-
 ||zen.yandex.*^$important
 ||dzen.ru^$important
 ||market.yandex.*^$important
@@ -148,11 +128,9 @@
 ||eda.yandex.*^$important
 ||plus.yandex.*^$important
 
-
 ! ==================================================
-! [K] КОСМЕТИКА — ЧИСТЫЙ ПОИСК
+! [J] КОСМЕТИКА — ЧИСТЫЙ ПОИСК
 ! ==================================================
-
 yandex.kz##.serp-item:has-text(Реклама)
 yandex.kz##.serp-item:has(.label_theme_direct)
 yandex.kz##[data-zone="direct"]
