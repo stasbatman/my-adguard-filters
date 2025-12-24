@@ -55,7 +55,7 @@
 ! [C] ПОЛНАЯ ЖЁСТКАЯ БЛОКИРОВКА YANDEX (KZ / RU / BY)
 ! ==================================================
 ||yandex.kz^$important
-||*.yandex.kz^$important
+!||*.yandex.kz^$important
 
 ||yandex.ru^$important
 ||*.yandex.ru^$important
