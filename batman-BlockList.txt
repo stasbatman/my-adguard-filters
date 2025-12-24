@@ -28,6 +28,7 @@
 ||adfox.ru^$important
 ||webvisor.org^
 ||alhapi.com^
+||onesignal.com^
 
 
 ! === YouTube AdBlock Minimal ===
