@@ -33,7 +33,7 @@
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
 @@||static.yandex.net^
-@@||favicon.yandex.*^
+
 
 
 ! ===== ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX =====
