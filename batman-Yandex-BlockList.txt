@@ -63,11 +63,11 @@
 ||yandex.kz^$important
 ||*.yandex.kz^$important
 
-!||yandex.ru^$important
-!||*.yandex.ru^$important
+||yandex.ru^$important
+||*.yandex.ru^$important
 
-!||yandex.by^$important
-!||*.yandex.by^$important
+||yandex.by^$important
+||*.yandex.by^$important
 
 ||yastatic.net^$important
 ||yastatic.kz^$important
