@@ -45,8 +45,8 @@
 ||*.yandex.ru^$important
 ||yandex.by^$important
 ||*.yandex.by^$important
-||yandex.net^$important
-||*.yandex.net^$important
+||yandex.net^
+||*.yandex.net^
 
 
 ! ===== РЕКЛАМА / RTB / DSP =====
