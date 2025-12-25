@@ -25,6 +25,7 @@
 @@||disk.yandex.ru^$document
 @@||disk.yandex.com^$document
 @@||api.disk.yandex.*^
+@@||cloud-api.yandex.net
 
 @@||music.yandex.ru^$document
 @@||music.yandex.com^$document
