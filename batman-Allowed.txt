@@ -20,5 +20,7 @@
 @@||hls.live-video.net^$important
 @@||a.nel.cloudflare.com^$important
 @@||ynuf.aliapp.org^$important
+@@||calls.okcdn.ru^
+@@||videowebrtc.okcdn.ru^
 
 
