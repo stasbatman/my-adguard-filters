@@ -35,6 +35,11 @@
 @@||oauth.yandex.*^$document
 @@||static.yandex.net^
 
+@@||passport.yandex.ru^$important
+@@||oauth.yandex.ru^$important
+@@||avatars.mds.yandex.net^$important
+
+
 
 
 ! ===== ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX =====
