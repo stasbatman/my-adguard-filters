@@ -134,3 +134,15 @@ yandex.kz##[id*="ad"]
 yandex.kz##.serp-item:has-text(Реклама)
 yandex.kz##.serp-item:has(.label_theme_direct)
 yandex.kz##[data-zone="direct"]
+
+! ===== FINAL KILL (first-party ads) =====
+
+||yandex.kz/clck^$important
+||clck.yandex.*^$important
+
+||yandex.kz/ads^$important
+||yandex.kz/adfox^$important
+
+||yandex.kz/*ad*^$xhr,important
+||yandex.kz/*banner*^$xhr,important
+||yandex.kz/*direct*^$xhr,important
