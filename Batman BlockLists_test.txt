@@ -1,1 +1,141 @@
+! =========================================================
+! YANDEX MAX HARD (KZ SEARCH OK)
+! Оставлено: Search (yandex.kz) / Mail / Disk / Music
+! Всё остальное: BLOCK
+! Режим: MAX HARD (без поломок)
+! GitHub-ready
+! =========================================================
 
+
+! ================= РАЗРЕШЕНИЯ =================
+
+@@||yandex.kz^$document,important
+@@||yandex.kz/search^$document,important
+@@||yandex.kz/images/search^$document,important
+
+! API поиска
+@@||yandex.kz/search/*^$xhr,important
+@@||yandex.kz/search?*^$xhr,important
+
+! подсказки
+@@||suggest.yandex.kz^$important
+@@||yandex.kz/suggest^$important
+
+! почта
+@@||mail.yandex.kz^$document
+@@||mail.yandex.ru^$document
+@@||mail.yandex.com^$document
+@@||imap.yandex.com^
+@@||smtp.yandex.com^
+
+! диск
+@@||disk.yandex.kz^$document
+@@||disk.yandex.ru^$document
+@@||disk.yandex.com^$document
+@@||api.disk.yandex.*^
+@@||cloud-api.yandex.*^$important
+
+! музыка
+@@||music.yandex.ru^$document
+@@||music.yandex.com^$document
+@@||api.music.yandex.*^
+
+! авторизация
+@@||passport.yandex.*^$document
+@@||oauth.yandex.*^$document
+@@||passport.yandex.ru^$important
+@@||oauth.yandex.ru^$important
+
+! базовая статика
+@@||static.yandex.net^
+@@||avatars.mds.yandex.net^$important
+@@||favicon.yandex.*^
+
+
+! ================= ЖЁСТКАЯ БЛОКИРОВКА =================
+
+||yandex.ru^$important
+||*.yandex.ru^$important
+||yandex.by^$important
+||*.yandex.by^$important
+||yandex.net^
+||*.yandex.net^
+
+
+! ================= РЕКЛАМА =================
+
+||an.yandex.*^
+||yabs.yandex.*^
+||direct.yandex.*^
+||adfox.yandex.*^
+||ads.yandex.*^
+||adsdk.yandex.*^
+||advertising.yandex.*^
+||offerwall.yandex.*^
+
+||yandexadexchange.net^
+||mobile.yandexadexchange.net^
+||awaps.yandex.net^
+
+
+! ================= АНАЛИТИКА =================
+
+||mc.yandex.*^
+||metrika.yandex.*^
+||appmetrica.yandex.*^
+||redirect.appmetrica.yandex.com^
+
+||webvisor.org^
+||*.webvisor.org^
+
+
+! ================= ТРЕКИНГ / РЕДИРЕКТЫ =================
+
+||clck.yandex.*^
+||redirect.yandex.*^
+
+
+! ================= CAPTCHA (АККУРАТНО) =================
+
+||yandex.kz/showcaptcha^$image,script
+
+
+! ================= VIDEO / MAPS =================
+
+||video.yandex.*/api/*ad*^
+||storage.mds.yandex.*/get-ads^
+||extmaps-api.maps.yandex.*/ads^
+
+
+! ================= TRACKING =================
+
+||api.browser.yandex.*^
+||mobile.yandex.*^
+||*.edge.yandex.*^
+
+
+! ================= ОТКЛЮЧЕНИЕ СЕРВИСОВ =================
+
+||zen.yandex.*^
+||dzen.ru^
+
+||market.yandex.*^
+||kinopoisk.ru^
+||afisha.yandex.*^
+
+||news.yandex.*^
+||travel.yandex.*^
+||realty.yandex.*^
+||auto.yandex.*^
+||eda.yandex.*^
+||plus.yandex.*^
+
+
+! ================= КОСМЕТИКА =================
+
+yandex.kz##.serp-item:has-text(Реклама)
+yandex.kz##.serp-item:has(.label_theme_direct)
+yandex.kz##[data-zone="direct"]
+yandex.kz##.yabs
+yandex.kz##.adfox
+yandex.kz##.promo
