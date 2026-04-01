@@ -18,7 +18,6 @@
 ||sz.kz^$important
 ||*.apiok.net^
 ||ads.com^$important
-||ggpht.com^$important
 ||mobshark.net^$important
 ||flat-ads.com^$important
 ||rayjump.com^$important
