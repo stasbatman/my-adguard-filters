@@ -1,30 +1,28 @@
 ! =========================================================
-! YANDEX HARD+ (KZ SEARCH + MUSIC FIX)
+! YANDEX MAX HARD FINAL (STABLE + MUSIC OK)
 ! Оставлено: Search (yandex.kz) / Mail / Disk / Music
 ! Всё остальное: BLOCK
-! Режим: HARD+ (без поломок)
+! Без поломок / без ручных фиксов
 ! =========================================================
 
 
 ! =========================================================
-! [1] ОСНОВНЫЕ РАЗРЕШЕНИЯ (HTML / ПОИСК)
+! [1] ОСНОВА — ПОИСК
 ! =========================================================
 
 @@||yandex.kz^$document,important
 @@||yandex.kz/search^$document,important
 @@||yandex.kz/images/search^$document,important
 
-! API поиска
 @@||yandex.kz/search/*^$xhr,important
 @@||yandex.kz/search?*^$xhr,important
 
-! подсказки
 @@||suggest.yandex.kz^$important
 @@||yandex.kz/suggest^$important
 
 
 ! =========================================================
-! [2] ПОЧТА (MAIL)
+! [2] ПОЧТА
 ! =========================================================
 
 @@||mail.yandex.kz^$document
@@ -36,7 +34,7 @@
 
 
 ! =========================================================
-! [3] ДИСК (CLOUD / STORAGE)
+! [3] ДИСК
 ! =========================================================
 
 @@||disk.yandex.kz^$document
@@ -48,14 +46,14 @@
 
 
 ! =========================================================
-! [4] МУЗЫКА (FIX)
+! [4] МУЗЫКА (ПОЛНЫЙ FIX)
 ! =========================================================
 
 @@||music.yandex.ru^$document
 @@||music.yandex.com^$document
 
 @@||api.music.yandex.*^
-@@||api.music.yandex.ru^$important
+@@||strm.yandex.net^$important
 
 
 ! =========================================================
@@ -67,19 +65,16 @@
 
 
 ! =========================================================
-! [6] CDN / СТАТИКА (КРИТИЧНО ДЛЯ РАБОТЫ)
+! [6] CDN / СТАТИКА (НЕ ЛОМАЕМ)
 ! =========================================================
 
 @@||static.yandex.net^
 @@||avatars.mds.yandex.net^$important
 @@||favicon.yandex.*^
 
-! твой ручной фикс CDN (оставляем)
-@@||cdnrepfu6rku5qba3zpu.svc.cdn.yandex.net^$important
-
 
 ! =========================================================
-! [7] ЖЁСТКАЯ БЛОКИРОВКА YANDEX (ДРУГИЕ РЕГИОНЫ)
+! [7] ЖЁСТКАЯ БЛОКИРОВКА (ДРУГИЕ РЕГИОНЫ)
 ! =========================================================
 
 ||yandex.ru^$important
@@ -93,57 +88,58 @@
 
 
 ! =========================================================
-! [8] РЕКЛАМА / RTB / DSP (TOTAL BLOCK)
+! [8] РЕКЛАМА / RTB (МАКСИМУМ)
 ! =========================================================
 
-||an.yandex.*^
-||yabs.yandex.*^
-||direct.yandex.*^
-||adfox.yandex.*^
-||ads.yandex.*^
-||adsdk.yandex.*^
-||advertising.yandex.*^
-||offerwall.yandex.*^
+||an.yandex.*^$important
+||yabs.yandex.*^$important
+||direct.yandex.*^$important
+||adfox.yandex.*^$important
+||ads.yandex.*^$important
+||adsdk.yandex.*^$important
+||advertising.yandex.*^$important
+||offerwall.yandex.*^$important
 
-||yandexadexchange.net^
-||mobile.yandexadexchange.net^
-||awaps.yandex.net^
+||yandexadexchange.net^$important
+||mobile.yandexadexchange.net^$important
+||awaps.yandex.net^$important
 
-! доп. перехват внутри сайта
+! first-party реклама
 ||yandex.kz/*ad*^$xhr,important
 ||yandex.kz/*banner*^$xhr,important
+||yandex.kz/clck^$important
 
 
 ! =========================================================
 ! [9] АНАЛИТИКА / СЛЕЖКА
 ! =========================================================
 
-||mc.yandex.*^
-||metrika.yandex.*^
-||appmetrica.yandex.*^
-||redirect.appmetrica.yandex.com^
+||mc.yandex.*^$important
+||metrika.yandex.*^$important
+||appmetrica.yandex.*^$important
+||redirect.appmetrica.yandex.com^$important
 
-||webvisor.org^
-||*.webvisor.org^
-
-
-! =========================================================
-! [10] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ
-! =========================================================
-
-||clck.yandex.*^
-||redirect.yandex.*^
+||webvisor.org^$important
+||*.webvisor.org^$important
 
 
 ! =========================================================
-! [11] CAPTCHA (АККУРАТНО)
+! [10] РЕДИРЕКТЫ
+! =========================================================
+
+||clck.yandex.*^$important
+||redirect.yandex.*^$important
+
+
+! =========================================================
+! [11] CAPTCHA (МЯГКО)
 ! =========================================================
 
 ||yandex.kz/showcaptcha^$image,script
 
 
 ! =========================================================
-! [12] VIDEO / MEDIA (БЕЗ ПОЛОМКИ)
+! [12] VIDEO / MEDIA
 ! =========================================================
 
 ||video.yandex.*/api/*ad*^
@@ -155,32 +151,32 @@
 ! [13] TRACKING / SDK
 ! =========================================================
 
-||api.browser.yandex.*^
-||mobile.yandex.*^
-||*.edge.yandex.*^
+||api.browser.yandex.*^$important
+||mobile.yandex.*^$important
+||*.edge.yandex.*^$important
 
 
 ! =========================================================
 ! [14] ОТКЛЮЧЕНИЕ СЕРВИСОВ
 ! =========================================================
 
-||zen.yandex.*^
-||dzen.ru^
+||zen.yandex.*^$important
+||dzen.ru^$important
 
-||market.yandex.*^
-||kinopoisk.ru^
-||afisha.yandex.*^
+||market.yandex.*^$important
+||kinopoisk.ru^$important
+||afisha.yandex.*^$important
 
-||news.yandex.*^
-||travel.yandex.*^
-||realty.yandex.*^
-||auto.yandex.*^
-||eda.yandex.*^
-||plus.yandex.*^
+||news.yandex.*^$important
+||travel.yandex.*^$important
+||realty.yandex.*^$important
+||auto.yandex.*^$important
+||eda.yandex.*^$important
+||plus.yandex.*^$important
 
 
 ! =========================================================
-! [15] КОСМЕТИКА (ЧИСТЫЙ ПОИСК)
+! [15] КОСМЕТИКА (ДОБИВАЕМ HTML РЕКЛАМУ)
 ! =========================================================
 
 yandex.kz##.serp-item:has-text(Реклама)
@@ -190,5 +186,8 @@ yandex.kz##[data-zone="direct"]
 yandex.kz##.yabs
 yandex.kz##.adfox
 yandex.kz##.promo
+
 yandex.kz##div[class*="adv"]
 yandex.kz##div[class*="banner"]
+yandex.kz##div[class*="promo"]
+yandex.kz##div[class*="ad"]
