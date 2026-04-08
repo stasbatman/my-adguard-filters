@@ -1,13 +1,12 @@
 ! =========================================================
-! YANDEX MAX HARD FINAL (STABLE + MUSIC OK)
-! Оставлено: Search (yandex.kz) / Mail / Disk / Music
-! Всё остальное: BLOCK
-! Без поломок / без ручных фиксов
+! YANDEX FINAL HARD (NO CONFLICTS)
+! Search / Mail / Disk / Music OK
+! Максимальная блокировка без поломок
 ! =========================================================
 
 
 ! =========================================================
-! [1] ОСНОВА — ПОИСК
+! [1] ПОИСК (ОСНОВА)
 ! =========================================================
 
 @@||yandex.kz^$document,important
@@ -17,8 +16,8 @@
 @@||yandex.kz/search/*^$xhr,important
 @@||yandex.kz/search?*^$xhr,important
 
-@@||suggest.yandex.kz^$important
-@@||yandex.kz/suggest^$important
+@@||suggest.yandex.kz^$xhr,important
+@@||yandex.kz/suggest^$xhr,important
 
 
 ! =========================================================
@@ -46,13 +45,15 @@
 
 
 ! =========================================================
-! [4] МУЗЫКА (ПОЛНЫЙ FIX)
+! [4] МУЗЫКА (ПОЛНЫЙ FIX — ГЛАВНОЕ)
 ! =========================================================
 
-@@||music.yandex.ru^$document
-@@||music.yandex.com^$document
+@@||music.yandex.ru^$document,important
+@@||music.yandex.com^$document,important
 
-@@||api.music.yandex.*^
+@@||api.music.yandex.ru^$xhr,important
+@@||api.music.yandex.*^$xhr,important
+
 @@||strm.yandex.net^$important
 
 
@@ -65,7 +66,7 @@
 
 
 ! =========================================================
-! [6] CDN / СТАТИКА (НЕ ЛОМАЕМ)
+! [6] СТАТИКА / CDN (НЕ ЛОМАЕМ)
 ! =========================================================
 
 @@||static.yandex.net^
@@ -74,7 +75,7 @@
 
 
 ! =========================================================
-! [7] ЖЁСТКАЯ БЛОКИРОВКА (ДРУГИЕ РЕГИОНЫ)
+! [7] ЖЁСТКАЯ БЛОКИРОВКА (ОСТАЛЬНЫЕ ДОМЕНЫ)
 ! =========================================================
 
 ||yandex.ru^$important
@@ -88,7 +89,7 @@
 
 
 ! =========================================================
-! [8] РЕКЛАМА / RTB (МАКСИМУМ)
+! [8] РЕКЛАМА (МАКСИМАЛЬНО)
 ! =========================================================
 
 ||an.yandex.*^$important
@@ -104,10 +105,10 @@
 ||mobile.yandexadexchange.net^$important
 ||awaps.yandex.net^$important
 
-! first-party реклама
-||yandex.kz/*ad*^$xhr,important
-||yandex.kz/*banner*^$xhr,important
-||yandex.kz/clck^$important
+! first-party реклама (без ломания API)
+||yandex.kz/*ad*^$xhr
+||yandex.kz/*banner*^$xhr
+||yandex.kz/clck^
 
 
 ! =========================================================
@@ -127,8 +128,8 @@
 ! [10] РЕДИРЕКТЫ
 ! =========================================================
 
-||clck.yandex.*^$important
-||redirect.yandex.*^$important
+||clck.yandex.*^
+||redirect.yandex.*^
 
 
 ! =========================================================
