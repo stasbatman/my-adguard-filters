@@ -38,6 +38,7 @@
 @@||passport.yandex.ru^$important
 @@||oauth.yandex.ru^$important
 @@||avatars.mds.yandex.net^$important
+@@||api.music.yandex.ru^$important
 
 
 
