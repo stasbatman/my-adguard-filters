@@ -29,7 +29,8 @@
 @@||music.yandex.com^$document
 @@||api.music.yandex.*^
 @@||api.music.yandex.ru^$important
-@@||strm-mar-147.strm.yandex.net^$important
+
+@@||strm-mar-*.strm.yandex.net^$important
 @@||cdnrepfu6rku5qba3zpu.svc.cdn.yandex.net^$important
 
 @@||passport.yandex.*^$document
@@ -89,7 +90,7 @@
 ||yastatic.net^
 ||yastatic.kz^
 
-! ===== [H] ОТКЛЮЧЕНИЕ ВСЕГО ЛИШНЕГО СЕРВИСА =====
+! ===== [H] ОТКЛЮЧЕНИЕ СЕРВИСОВ =====
 ||zen.yandex.*^
 ||dzen.ru^
 ||market.yandex.*^
