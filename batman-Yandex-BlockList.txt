@@ -6,7 +6,7 @@
 ! Авторский общий список (GitHub ready)
 ! =========================================================
 
-! ===== [A] РАЗРЕШЕНИЯ — ТОЛЬКО HTML / API =====
+! ===== [A] РАЗРЕШЕНИЯ — HTML / API / STREAM =====
 @@||yandex.kz^$document,important
 @@||yandex.kz/search^$document,important
 @@||yandex.kz/images/search^$document,important
@@ -30,18 +30,19 @@
 @@||api.music.yandex.*^
 @@||api.music.yandex.ru^$important
 
-@@||strm-mar-*.strm.yandex.net^$important
+@@||strm-*.strm.yandex.net^$important
 @@||cdnrepfu6rku5qba3zpu.svc.cdn.yandex.net^$important
+@@||avatars.yandex.net^$important
+@@||avatars.mds.yandex.net^$important
 
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
 @@||static.yandex.net^
+
 @@||passport.yandex.ru^$important
 @@||oauth.yandex.ru^$important
-@@||avatars.mds.yandex.net^$important
-@@||avatars.yandex.net^$important
 
-! ===== [B] ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX =====
+! ===== [B] ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX (кроме разрешённого выше) =====
 ||yandex.kz^$important
 ||*.yandex.kz^$important
 ||yandex.ru^$important
