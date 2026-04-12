@@ -22,5 +22,6 @@
 @@||ynuf.aliapp.org^$important
 @@||calls.okcdn.ru^
 @@||videowebrtc.okcdn.ru^
+@@||cdn.jsdelivr.net^$important
 
 
