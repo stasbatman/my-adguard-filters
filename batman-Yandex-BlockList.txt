@@ -41,6 +41,11 @@
 
 @@||passport.yandex.ru^$important
 @@||oauth.yandex.ru^$important
+@@||id.yandex.ru^$important
+@@||id.yastatic.net^$important
+@@||mobileproxy.passport.yandex.kz^$important
+@@||mc.yandex.ru^$important
+
 
 ! ===== [B] ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX (кроме разрешённого выше) =====
 ||yandex.kz^$important
