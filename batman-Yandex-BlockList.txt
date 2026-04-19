@@ -1,17 +1,16 @@
 ! =========================================================
-! YANDEX MAX HARD (KZ SEARCH + MUSIC WORKING)
-! Оставлено: Search (yandex.kz) / Mail / Disk / Music
-! Всё остальное: TOTAL BLOCK
-! Режим: MAX HARD
-! Авторский общий список (GitHub ready)
+! YANDEX MAX HARD CLEAN (NO CONFLICTS)
+! Search / Mail / Disk / Music OK
 ! =========================================================
 
-! ===== [A] РАЗРЕШЕНИЯ — HTML / API / STREAM =====
+
+! ===== [A] РАЗРЕШЕНИЯ =====
+
 @@||yandex.kz^$document,important
 @@||yandex.kz/search^$document,important
 @@||yandex.kz/images/search^$document,important
 @@||yandex.kz/search/*^$xhr,important
-@@||suggest.yandex.kz^$important
+@@||suggest.yandex.kz^$xhr,important
 
 @@||mail.yandex.kz^$document
 @@||mail.yandex.ru^$document
@@ -23,33 +22,27 @@
 @@||disk.yandex.ru^$document
 @@||disk.yandex.com^$document
 @@||api.disk.yandex.*^
-@@||cloud-api.yandex.net^$important
+@@||cloud-api.yandex.*^$important
 
-@@||music.yandex.ru^$document
-@@||music.yandex.com^$document
-@@||api.music.yandex.*^
-@@||api.music.yandex.ru^$important
+! ===== МУЗЫКА (ПРАВИЛЬНО) =====
+@@||music.yandex.ru^$document,important
+@@||music.yandex.com^$document,important
+@@||api.music.yandex.*^$xhr,important
+@@||strm.yandex.net^$important
 
-@@||strm-*.strm.yandex.net^$important
-@@||cdnrepfu6rku5qba3zpu.svc.cdn.yandex.net^$important
+! ===== CDN / КАРТИНКИ =====
+@@||static.yandex.net^
 @@||avatars.yandex.net^$important
 @@||avatars.mds.yandex.net^$important
+@@||favicon.yandex.*^
 
+! ===== АВТОРИЗАЦИЯ =====
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
-@@||static.yandex.net^
-
-@@||passport.yandex.ru^$important
-@@||oauth.yandex.ru^$important
-@@||id.yandex.ru^$important
-@@||id.yastatic.net^$important
-@@||mobileproxy.passport.yandex.kz^$important
-@@||mc.yandex.ru^$important
 
 
-! ===== [B] ЖЁСТКАЯ БЛОКИРОВКА ВСЕГО YANDEX (кроме разрешённого выше) =====
-||yandex.kz^$important
-||*.yandex.kz^$important
+! ===== [B] ЖЁСТКАЯ БЛОКИРОВКА =====
+
 ||yandex.ru^$important
 ||*.yandex.ru^$important
 ||yandex.by^$important
@@ -57,59 +50,80 @@
 ||yandex.net^
 ||*.yandex.net^
 
-! ===== [C] РЕКЛАМА / RTB / DSP =====
-||an.yandex.*^
-||yabs.yandex.*^
-||direct.yandex.*^
-||adfox.yandex.*^
-||ads.yandex.*^
-||adsdk.yandex.*^
-||advertising.yandex.*^
-||offerwall.yandex.*^
-||yandexadexchange.net^
-||mobile.yandexadexchange.net^
-||awaps.yandex.net^
 
-! ===== [D] АНАЛИТИКА / СЛЕЖКА =====
-||mc.yandex.*^
-||metrika.yandex.*^
-||appmetrica.yandex.*^
-||redirect.appmetrica.yandex.com^
-||webvisor.org^
-||*.webvisor.org^
+! ===== [C] РЕКЛАМА =====
 
-! ===== [E] РЕДИРЕКТЫ / КЛИК-ТРЕКИНГ / CAPTCHA =====
+||an.yandex.*^$important
+||yabs.yandex.*^$important
+||direct.yandex.*^$important
+||adfox.yandex.*^$important
+||ads.yandex.*^$important
+||adsdk.yandex.*^$important
+||advertising.yandex.*^$important
+||offerwall.yandex.*^$important
+
+||yandexadexchange.net^$important
+||mobile.yandexadexchange.net^$important
+||awaps.yandex.net^$important
+
+! first-party реклама
+||yandex.kz/*ad*^$xhr
+||yandex.kz/*banner*^$xhr
+
+
+! ===== [D] АНАЛИТИКА =====
+
+||mc.yandex.*^$important
+||metrika.yandex.*^$important
+||appmetrica.yandex.*^$important
+||redirect.appmetrica.yandex.com^$important
+
+||webvisor.org^$important
+||*.webvisor.org^$important
+
+
+! ===== [E] РЕДИРЕКТЫ =====
+
 ||clck.yandex.*^
 ||redirect.yandex.*^
-||yandex.kz/showcaptcha^
 
-! ===== [F] VIDEO / MAPS / FEED =====
-||video.yandex.*^
+
+! ===== [F] CAPTCHA =====
+
+||yandex.kz/showcaptcha^$image,script
+
+
+! ===== [G] MEDIA ADS =====
+
+||video.yandex.*/api/*ad*^
 ||storage.mds.yandex.*/get-ads^
 ||extmaps-api.maps.yandex.*/ads^
 
-! ===== [G] SDK / MOBILE / CDN TRACKING =====
-||api.browser.yandex.*^
-||mobile.yandex.*^
-||*.edge.yandex.*^
-||*.cdn.yandex.*^
-||yastatic.net^
-||yastatic.kz^
 
-! ===== [H] ОТКЛЮЧЕНИЕ СЕРВИСОВ =====
-||zen.yandex.*^
-||dzen.ru^
-||market.yandex.*^
-||kinopoisk.ru^
-||afisha.yandex.*^
-||news.yandex.*^
-||travel.yandex.*^
-||realty.yandex.*^
-||auto.yandex.*^
-||eda.yandex.*^
-||plus.yandex.*^
+! ===== [H] TRACKING =====
 
-! ===== [I] КОСМЕТИКА — ЧИСТЫЙ ПОИСК =====
+||api.browser.yandex.*^$important
+||mobile.yandex.*^$important
+||*.edge.yandex.*^$important
+
+
+! ===== [I] СЕРВИСЫ =====
+
+||zen.yandex.*^$important
+||dzen.ru^$important
+||market.yandex.*^$important
+||kinopoisk.ru^$important
+||afisha.yandex.*^$important
+||news.yandex.*^$important
+||travel.yandex.*^$important
+||realty.yandex.*^$important
+||auto.yandex.*^$important
+||eda.yandex.*^$important
+||plus.yandex.*^$important
+
+
+! ===== [J] КОСМЕТИКА =====
+
 yandex.kz##.serp-item:has-text(Реклама)
 yandex.kz##.serp-item:has(.label_theme_direct)
 yandex.kz##[data-zone="direct"]
