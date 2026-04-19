@@ -1,6 +1,7 @@
 ! =========================================================
-! YANDEX MAX HARD STABLE (NO BREAKAGE)
-! Search / Mail / Disk / Music WORKING
+! YANDEX MAX HARD (STABLE FINAL)
+! Работает: Search / Mail / Disk / Music
+! Без поломок авторизации и API
 ! =========================================================
 
 
@@ -12,12 +13,11 @@
 @@||yandex.kz/search^$document,important
 @@||yandex.kz/images/search^$document,important
 @@||yandex.kz/search/*^$xhr,important
-@@||yandex.kz/search?*^$xhr,important
 @@||suggest.yandex.kz^$xhr,important
 
 
 ! =======================
-! [2] ПОЧТА
+! [2] ПОЧТА + АВТОРИЗАЦИЯ
 ! =======================
 
 @@||mail.yandex.kz^$document
@@ -27,11 +27,14 @@
 @@||imap.yandex.com^
 @@||smtp.yandex.com^
 
-! 🔑 авторизация (фикс поломок)
+! критично для входа
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
 @@||*.passport.yandex.*^$important
 @@||mobileproxy.passport.yandex.net^$important
+
+! фикс твоей проблемы
+@@||api.browser.yandex.net^$important
 
 
 ! =======================
@@ -47,15 +50,13 @@
 
 
 ! =======================
-! [4] МУЗЫКА (ПОЛНЫЙ SAFE)
+! [4] МУЗЫКА (SAFE)
 ! =======================
 
 @@||music.yandex.ru^$document,important
 @@||music.yandex.com^$document,important
 
 @@||api.music.yandex.*^$xhr,important
-
-! ❗ не трогаем стримы вообще
 @@||strm.yandex.net^$important
 
 
@@ -77,15 +78,13 @@
 
 
 ! =======================
-! [7] ГЛОБАЛЬНЫЙ БЛОК
+! [7] ЖЁСТКАЯ БЛОКИРОВКА (кроме KZ)
 ! =======================
 
 ||yandex.ru^$important
 ||*.yandex.ru^$important
-
 ||yandex.by^$important
 ||*.yandex.by^$important
-
 ||yandex.net^
 ||*.yandex.net^
 
@@ -107,7 +106,7 @@
 ||mobile.yandexadexchange.net^$important
 ||awaps.yandex.net^$important
 
-! first-party реклама
+! first-party реклама (жёстко)
 ||yandex.kz/*ad*^$xhr,important
 ||yandex.kz/*banner*^$xhr,important
 ||yandex.kz/*direct*^$xhr,important
@@ -152,10 +151,12 @@
 
 
 ! =======================
-! [13] TRACKING SDK
+! [13] TRACKING SDK (ИСПРАВЛЕНО)
 ! =======================
 
-||api.browser.yandex.*^$important
+! раньше ломало почту — теперь правильно
+||api.browser.yandex.*^$third-party
+
 ||mobile.yandex.*^$important
 ||*.edge.yandex.*^$important
 
