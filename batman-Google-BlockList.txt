@@ -1,96 +1,82 @@
-! Custom Google Ads & Tracking Blocklist for AdGuard
-! Updated July 2025
+! =========================================================
+! GOOGLE ULTRA CLEAN (NO BREAKAGE)
+! Ads + Tracking MAX BLOCK
+! =========================================================
 
-! === Ads & DoubleClick ===
-||adclick.g.doubleclick.net^
-||addons-pa.clients6.google.com^
-||admob.com^
-||ads.g.doubleclick.net^
-||ads.google.com^
-||adservice.google.*/^
-||adservice.google.co*^
-||adservice.google.com^
-||adsmeasurement.google.com^
-||adssettings.google.com^
-||adwords.google.*/^
-||adwords.google.com^
-||apps.admob.com^
-||cm.g.doubleclick.net^
-||doubleclick.net^
-||fls.doubleclick.net^
-||g.doubleclick.net^
-||googleadservices.com^
-||googleleadservices.com^
-||googlesyndication.com^
-||m.doubleclick.net^
-||pagead-googlehosted.l.google.com^
-||pagead-googlehosted.l.googleusercontent.com^
-||pagead.l.doubleclick.net^
+
+! =========================
+! [1] GOOGLE ADS (ОСНОВА)
+! =========================
+
+||doubleclick.net^$important
+||googlesyndication.com^$important
+||googleadservices.com^$important
+||googleleadservices.com^$important
+
+||adservice.google.*^
 ||pagead2.googlesyndication.com^
-||partner.googleadservices.com^
-||partnerad.l.doubleclick.net^
+||tpc.googlesyndication.com^
+
 ||pubads.g.doubleclick.net^
 ||securepubads.g.doubleclick.net^
-||stats.g.doubleclick.net^
-||tpc.googlesyndication.com^
-||video-ad-stats.l.google.com^
+||partnerad.l.doubleclick.net^
 
-! === Analytics & Tag Manager ===
-||adsmeasurement.google.com^
-||analytics.google.com^
-||app-measurement.com^
-||google-analytics.com^
-||googletagmanager.com^
-||ssl-googletagmanager.l.google.com^
+
+! =========================
+! [2] TRACKING / ANALYTICS
+! =========================
+
+||google-analytics.com^$important
 ||ssl.google-analytics.com^
-||tagmanager.google.com^
-||www.googletagmanager.com^
+||analytics.google.com^
 
-! === Firebase & Crashlytics ===
-||firebase-settings.crashlytics.com^
-||firebaseinstallations.googleapis.com^
+||app-measurement.com^$important
+||adsmeasurement.google.com^$important
+
+
+! =========================
+! [3] TAG MANAGER
+! =========================
+
+||googletagmanager.com^$important
+||googletagservices.com^$important
+||tagmanager.google.com^
+
+
+! =========================
+! [4] DOUBLECLICK TRACKING
+! =========================
+
+||stats.g.doubleclick.net^
+||cm.g.doubleclick.net^
+||fls.doubleclick.net^
+
+
+! =========================
+! [5] SAFE BLOCK (НЕ ЛОМАЕМ CDN)
+! =========================
+
+! только как сторонние ресурсы
+||ggpht.com^$third-party
+||gstatic.com^$third-party
+
+
+! =========================
+! [6] FIREBASE (АККУРАТНО)
+! =========================
+
 ||firebaselogging-pa.googleapis.com^
 
-! === GStatic, Fonts & Google CDN ===
-||dnsotls-ds.metric.gstatic.com^
-||encrypted-tbn0.gstatic.com^
-||encrypted-tbn1.gstatic.com^
-||encrypted-tbn2.gstatic.com^
-||encrypted-tbn3.gstatic.com^
-||fonts.gstatic.com^
-||metric.gstatic.com^
-||mtalk.google.com^
-||ssl.gstatic.com^
 
-! === Other Google Services (APIs, PKI, etc.) ===
-||0.client-channel.google.com^
-||aa.google.com^
-||apis.google.com^
-||chart.apis.google.com^
-||clients1.google.com^
-||clients2.google.com^
-||clients3.google.com^
-||clients4.google.com^
-||clients5.google.com^
-||clients6.google.com^
-||conversiontracking.google.com^
-||cse.google.com^
-||geomobileservices-pa.googleapis.com^
-||googletagservices.com^
-||ogs.google.com^
-||pki-goog.l.google.com^
-||signaler-pa.clients6.google.com^
-||ssl-googletagservices.l.google.com^
-||www.googletagservices.com^
+! =========================
+! [7] РАЗРЕШЕНИЯ (НЕ ЛОМАТЬ СИСТЕМУ)
+! =========================
 
-!Google разрешено
-@@||firebaseremoteconfig.googleapis.com^$important
-@@||android.apis.google.com^
 @@||mtalk.google.com^$important
-@@||ogs.google.com^$important
 @@||ssl.gstatic.com^$important
-@@||signaler-pa.clients6.google.com^$important
-@@||addons-pa.clients6.google.com^$important
-@@||chromewebstore.google.com
-@@||firebaseinstallations.googleapis.com
+@@||apis.google.com^$important
+@@||fonts.gstatic.com^$important
+@@||firebaseremoteconfig.googleapis.com^$important
+@@||firebaseinstallations.googleapis.com^$important
 @@||imasdk.googleapis.com^$important
+@@||chromewebstore.google.com^
