@@ -1,7 +1,7 @@
 ! =========================================================
-! YANDEX MAX HARD (STABLE FINAL)
+! YANDEX MAX HARD (STABLE FINAL NO-CONFLICT)
 ! Работает: Search / Mail / Disk / Music
-! Без поломок авторизации и API
+! Авторизация и API НЕ ломаются
 ! =========================================================
 
 
@@ -27,14 +27,19 @@
 @@||imap.yandex.com^
 @@||smtp.yandex.com^
 
-! критично для входа
+! 🔑 авторизация (ПОЛНЫЙ SAFE)
 @@||passport.yandex.*^$document
 @@||oauth.yandex.*^$document
+@@||oauth.yandex.ru^$important
 @@||*.passport.yandex.*^$important
 @@||mobileproxy.passport.yandex.net^$important
 
-! фикс твоей проблемы
+! 🔧 API (фикс входа)
 @@||api.browser.yandex.net^$important
+@@||api.browser.yandex.ru^$important
+
+! 🔧 доп. сервис (фикс почты)
+@@||bro-pilot-external.s3.yandex.net^$important
 
 
 ! =======================
@@ -57,6 +62,8 @@
 @@||music.yandex.com^$document,important
 
 @@||api.music.yandex.*^$xhr,important
+
+! ❗ стримы НЕ трогаем вообще
 @@||strm.yandex.net^$important
 
 
@@ -78,13 +85,15 @@
 
 
 ! =======================
-! [7] ЖЁСТКАЯ БЛОКИРОВКА (кроме KZ)
+! [7] ГЛОБАЛЬНЫЙ БЛОК (кроме KZ)
 ! =======================
 
 ||yandex.ru^$important
 ||*.yandex.ru^$important
+
 ||yandex.by^$important
 ||*.yandex.by^$important
+
 ||yandex.net^
 ||*.yandex.net^
 
@@ -106,7 +115,7 @@
 ||mobile.yandexadexchange.net^$important
 ||awaps.yandex.net^$important
 
-! first-party реклама (жёстко)
+! first-party реклама
 ||yandex.kz/*ad*^$xhr,important
 ||yandex.kz/*banner*^$xhr,important
 ||yandex.kz/*direct*^$xhr,important
@@ -151,10 +160,10 @@
 
 
 ! =======================
-! [13] TRACKING SDK (ИСПРАВЛЕНО)
+! [13] TRACKING SDK (БЕЗ ПОЛОМОК)
 ! =======================
 
-! раньше ломало почту — теперь правильно
+! ключевой фикс — НЕ ломает сервисы
 ||api.browser.yandex.*^$third-party
 
 ||mobile.yandex.*^$important
