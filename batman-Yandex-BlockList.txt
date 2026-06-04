@@ -33,6 +33,7 @@
 @@||oauth.yandex.ru^$important
 @@||*.passport.yandex.*^$important
 @@||mobileproxy.passport.yandex.net^$important
+@@||uid.yandex.ru^$important
 
 ! 🔧 API (фикс входа)
 @@||api.browser.yandex.net^$important
