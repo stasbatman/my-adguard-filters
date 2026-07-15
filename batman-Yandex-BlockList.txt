@@ -14,6 +14,11 @@
 @@||yandex.kz/images/search^$document,important
 @@||yandex.kz/search/*^$xhr,important
 @@||suggest.yandex.kz^$xhr,important
+@@||uid.yandex.ru^$important
+@@||id.yandex.ru^$important
+@@||report.appmetrica.yandex.net^$important
+@@||mail.yandex.ru^$important
+
 
 
 ! =======================
